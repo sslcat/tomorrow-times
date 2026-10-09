@@ -1,5 +1,73 @@
-import Link from 'next/link';
-import { search } from '@/lib/queries';
-import { PageHeading } from '@/components/editorial';
-export const metadata={title:'Search the Reach',robots:{index:false,follow:true}};
-export default async function Search({searchParams}:{searchParams:Promise<{q?:string}>}) {const params=await searchParams;const q=typeof params.q==='string'?params.q.slice(0,120):'';const results=search(q);return <><PageHeading kicker="THE INDEX" title="Search the Reach" description="A person, a place, a question you can’t quite put down."/><form action="/search" className="search-form"><label htmlFor="query">Search articles, people, places and storylines<input id="query" name="q" type="search" maxLength={120} defaultValue={q} placeholder="Try Lyra, water, or Europa…"/></label><button className="button" type="submit">Search</button></form>{q?<><p className="small muted">{results.length} result{results.length===1?'':'s'} for “{q}”</p><div className="result-list">{results.map(r=><article className="search-result" key={`${r.kind}-${r.id}`}><p className="eyebrow">{r.kind}</p><h2><Link href={r.href}>{r.title}</Link></h2><p>{r.summary}</p></article>)}</div>{!results.length&&<div className="empty-state"><h3>No matches in the public record.</h3><p>Try a person’s first name, a location or a shorter phrase.</p><Link href="/universe">Browse the universe index →</Link></div>}</>:<div className="filters"><Link href="/search?q=water">The water dispute</Link><Link href="/search?q=Lyra">Lyra Saye</Link><Link href="/search?q=Daro">The Daro family</Link><Link href="/search?q=Comets">Ceres Comets</Link></div>}</>;}
+import Link from "next/link";
+import { search } from "@/lib/queries";
+import { PageHeading } from "@/components/editorial";
+export const metadata = {
+  title: "Search the Reach",
+  robots: { index: false, follow: true },
+};
+export default async function Search({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string }>;
+}) {
+  const params = await searchParams;
+  const q = typeof params.q === "string" ? params.q.slice(0, 120) : "";
+  const results = search(q);
+  return (
+    <>
+      <PageHeading
+        kicker="THE INDEX"
+        title="Search the Reach"
+        description="A person, a place, a question you can’t quite put down."
+      />
+      <form action="/search" className="search-form">
+        <label htmlFor="query">
+          Search articles, people, places and storylines
+          <input
+            id="query"
+            name="q"
+            type="search"
+            maxLength={120}
+            defaultValue={q}
+            placeholder="Try Lyra, water, or Europa…"
+          />
+        </label>
+        <button className="button" type="submit">
+          Search
+        </button>
+      </form>
+      {q ? (
+        <>
+          <p className="small muted">
+            {results.length} result{results.length === 1 ? "" : "s"} for “{q}”
+          </p>
+          <div className="result-list">
+            {results.map((r) => (
+              <article className="search-result" key={`${r.kind}-${r.id}`}>
+                <p className="eyebrow">{r.kind}</p>
+                <h2>
+                  <Link href={r.href}>{r.title}</Link>
+                </h2>
+                <p>{r.summary}</p>
+              </article>
+            ))}
+          </div>
+          {!results.length && (
+            <div className="empty-state">
+              <h3>No matches in the public record.</h3>
+              <p>Try a person’s first name, a location or a shorter phrase.</p>
+              <Link href="/universe">Browse the universe index →</Link>
+            </div>
+          )}
+        </>
+      ) : (
+        <div className="filters">
+          <Link href="/search?q=water">The water dispute</Link>
+          <Link href="/search?q=Lyra">Lyra Saye</Link>
+          <Link href="/search?q=Daro">The Daro family</Link>
+          <Link href="/search?q=Comets">Ceres Comets</Link>
+        </div>
+      )}
+    </>
+  );
+}

@@ -8,3 +8,7 @@
 6. Unit/integration/browser checks, production build, honest operational documentation and local Git milestones. No push, deployment or paid services.
 
 Constraints: use the existing two-core Codespace; no external image generation; private forwarded port 3000; publicly usable authentication is outside this offline release and all public write routes remain disabled.
+
+## Completion
+
+All implementation phases were completed as an offline vertical slice. See VERIFICATION.md for actual checks, scope, screenshots and remaining production limitations. Public reader posting and scheduled/paid providers remain disabled as required.

@@ -1,7 +1,114 @@
-import Link from 'next/link';
-import { sections } from '@/lib/contracts';
-import { fictionalDate, editorialZone } from '@/lib/calendar';
-import { publication } from '@/lib/publication';
-import { LiveDate,ThemeButton } from './reader-tools';
-export function Header() {return <><div className="fiction-bar">A FICTIONAL UNIVERSE. A VERY HUMAN STORY. <Link href="/about">Read our premise ↗</Link></div><header className="site-header"><div className="masthead-meta"><div><span className="edition-dot"/> THE COMMON REACH EDITION</div><div className="header-tools"><Link href="/search">Search</Link><Link href="/reading-list">Reading list</Link><ThemeButton/></div></div><div className="masthead"><div className="masthead-date"><LiveDate initial={fictionalDate()} zone={editorialZone()}/><span>One thousand years ahead</span></div><Link className="wordmark" href="/">{publication.name}</Link><p className="masthead-tagline">{publication.tagline}</p></div><nav className="desktop-nav" aria-label="Sections"><Link href="/" className="frontpage-link">Front page</Link>{sections.slice(0,8).map(([id,name])=><Link key={id} href={`/sections/${id}`}>{name.replace(' & Technology','').replace(' & Economy','').replace(' & Lifestyle','').replace('Interplanetary Affairs','The Reach')}</Link>)}<Link href="/community">Community</Link><details className="more-nav"><summary>More</summary><div>{sections.slice(8).map(([id,name])=><Link key={id} href={`/sections/${id}`}>{name}</Link>)}<Link href="/universe">Universe index</Link><Link href="/storylines">Storylines</Link><Link href="/archives">Archives</Link></div></details></nav><details className="mobile-nav"><summary>Explore the newspaper <span>☰</span></summary><nav aria-label="Mobile sections"><Link href="/">Front page</Link>{sections.map(([id,name])=><Link key={id} href={`/sections/${id}`}>{name}</Link>)}<Link href="/community">Community</Link><Link href="/universe">Universe index</Link><Link href="/storylines">Storylines</Link><Link href="/archives">Archives</Link></nav></details></header></>;}
-export function Footer() {return <footer className="site-footer"><div><Link className="footer-wordmark" href="/">{publication.name}</Link><p>{publication.tagline}</p><p className="footer-disclosure">All reporting, people and events are fictional.<br/>An evolving universe, made to be read.</p></div><nav aria-label="Footer"><Link href="/about">About & editorial standards</Link><Link href="/universe">People & places</Link><Link href="/storylines">Follow the story</Link><Link href="/archives">The archive</Link><Link href="/community">Reader community</Link><Link href="/admin">Editorial desk</Link></nav><p className="footer-note">Independent voices.<br/>Shared worlds.<br/>Unfinished stories.</p></footer>;}
+import Link from "next/link";
+import { sections } from "@/lib/contracts";
+import { fictionalDate, editorialZone } from "@/lib/calendar";
+import { publication } from "@/lib/publication";
+import { LiveDate, ThemeButton } from "./reader-tools";
+export function Header() {
+  return (
+    <>
+      <div className="fiction-bar">
+        A FICTIONAL UNIVERSE. A VERY HUMAN STORY.{" "}
+        <Link href="/about">Read our premise ↗</Link>
+      </div>
+      <header className="site-header">
+        <div className="masthead-meta">
+          <div>
+            <span className="edition-dot" /> THE COMMON REACH EDITION
+          </div>
+          <div className="header-tools">
+            <Link href="/search">Search</Link>
+            <Link href="/reading-list">Reading list</Link>
+            <ThemeButton />
+          </div>
+        </div>
+        <div className="masthead">
+          <div className="masthead-date">
+            <LiveDate initial={fictionalDate()} zone={editorialZone()} />
+            <span>One thousand years ahead</span>
+          </div>
+          <Link className="wordmark" href="/">
+            {publication.name}
+          </Link>
+          <p className="masthead-tagline">{publication.tagline}</p>
+        </div>
+        <nav className="desktop-nav" aria-label="Sections">
+          <Link href="/" className="frontpage-link">
+            Front page
+          </Link>
+          {sections.slice(0, 8).map(([id, name]) => (
+            <Link key={id} href={`/sections/${id}`}>
+              {name
+                .replace(" & Technology", "")
+                .replace(" & Economy", "")
+                .replace(" & Lifestyle", "")
+                .replace("Interplanetary Affairs", "The Reach")}
+            </Link>
+          ))}
+          <Link href="/community">Community</Link>
+          <details className="more-nav">
+            <summary>More</summary>
+            <div>
+              {sections.slice(8).map(([id, name]) => (
+                <Link key={id} href={`/sections/${id}`}>
+                  {name}
+                </Link>
+              ))}
+              <Link href="/universe">Universe index</Link>
+              <Link href="/storylines">Storylines</Link>
+              <Link href="/archives">Archives</Link>
+            </div>
+          </details>
+        </nav>
+        <details className="mobile-nav">
+          <summary>
+            Explore the newspaper <span>☰</span>
+          </summary>
+          <nav aria-label="Mobile sections">
+            <Link href="/">Front page</Link>
+            {sections.map(([id, name]) => (
+              <Link key={id} href={`/sections/${id}`}>
+                {name}
+              </Link>
+            ))}
+            <Link href="/community">Community</Link>
+            <Link href="/universe">Universe index</Link>
+            <Link href="/storylines">Storylines</Link>
+            <Link href="/archives">Archives</Link>
+          </nav>
+        </details>
+      </header>
+    </>
+  );
+}
+export function Footer() {
+  return (
+    <footer className="site-footer">
+      <div>
+        <Link className="footer-wordmark" href="/">
+          {publication.name}
+        </Link>
+        <p>{publication.tagline}</p>
+        <p className="footer-disclosure">
+          All reporting, people and events are fictional.
+          <br />
+          An evolving universe, made to be read.
+        </p>
+      </div>
+      <nav aria-label="Footer">
+        <Link href="/about">About & editorial standards</Link>
+        <Link href="/universe">People & places</Link>
+        <Link href="/storylines">Follow the story</Link>
+        <Link href="/archives">The archive</Link>
+        <Link href="/community">Reader community</Link>
+        <Link href="/admin">Editorial desk</Link>
+      </nav>
+      <p className="footer-note">
+        Independent voices.
+        <br />
+        Shared worlds.
+        <br />
+        Unfinished stories.
+      </p>
+    </footer>
+  );
+}

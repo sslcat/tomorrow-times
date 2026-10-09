@@ -63,6 +63,8 @@ PLAYWRIGHT_BROWSERS_PATH=/tmp/tomorrow-browsers npm run test:e2e
 PLAYWRIGHT_BROWSERS_PATH=/tmp/tomorrow-browsers npm run test:e2e:admin
 ```
 
+If Chromium reports missing system libraries on a fresh Ubuntu Codespace, its standard dependency command is `npx playwright install-deps chromium`. In this Codespace, the required libraries were instead downloaded and extracted into `/tmp/tomorrow-browser-libs` without changing system packages. The browser-test wrapper detects that temporary directory and the browser cache automatically. A Codespace rebuild may clear those caches.
+
 The public suite uses a production server on loopback port 3001. The editor suite uses a separate development server on the same port, a generated ephemeral test token and a separate test database. Run suites sequentially. The public suite checks every sitemap route, reading, discovery, bookmarks, mobile/tablet layouts, artwork, private-data isolation and production access restrictions. Screenshots go to ignored `artifacts/`.
 
 In restrictive agent sandboxes, Next’s worker processes, local listening ports and Chromium may need process/network permission. A failure to parse the TypeScript `--showConfig` output in that sandbox was resolved by allowing local build subprocesses; the normal Codespaces terminal is the intended runtime.
@@ -83,7 +85,7 @@ src/components/      Reader controls, newspaper shell, article components, local
 src/data/            Original versioned world, cast, events and opening edition
 src/lib/             Calendar, contracts, DB/queries, canon validation, newsroom,
                      provider/imagery interfaces, auth and community services
- db/migrations/      Versioned SQLite schema and migration history
+db/migrations/      Versioned SQLite schema and migration history
 scripts/             Seed/migrate/backup and local editor setup
 tests/               Unit, database integration and Playwright browser acceptance
 public/art/          Original source SVG artwork (no third-party image licensing)

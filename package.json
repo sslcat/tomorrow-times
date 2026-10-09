@@ -13,12 +13,13 @@
     "db:seed": "node --import tsx scripts/database.ts seed",
     "db:backup": "node --import tsx scripts/database.ts backup",
     "admin:setup": "node --import tsx scripts/admin-setup.ts",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "NEXT_TELEMETRY_DISABLED=1 next typegen && tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run",
-    "test:e2e": "playwright test",
+    "test:e2e": "node scripts/browser-test.mjs",
     "check": "npm run typecheck && npm run lint && npm test && npm run build",
-    "test:e2e:admin": "E2E_EDITOR_MODE=true playwright test"
+    "test:e2e:admin": "E2E_EDITOR_MODE=true node scripts/browser-test.mjs",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"scripts/*.{ts,mjs}\" \"tests/**/*.ts\" \"*.ts\" \"*.mjs\""
   },
   "dependencies": {
     "better-sqlite3": "13.0.3",
@@ -36,6 +37,7 @@
     "@types/react-dom": "19.3.0",
     "eslint": "9.39.5",
     "eslint-config-next": "16.4.0",
+    "prettier": "3.9.9",
     "tsx": "4.23.15",
     "typescript": "6.0.3",
     "vitest": "5.0.3"

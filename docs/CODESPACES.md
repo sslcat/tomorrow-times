@@ -15,7 +15,7 @@ Next.js listens on `0.0.0.0:3000`. Open the Codespaces **Ports** panel, forward 
 
 For the optional editor, run `npm run admin:setup` before starting development. Setup detects `CODESPACE_NAME` and `GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN` to configure the exact private `ADMIN_ORIGIN`. If browser sign-in is rejected for origin, correct that value in ignored `.env.local` and restart; do not weaken the check. The random editor token stays in that file.
 
-For production-build verification, stop development first, then run `npm run build && npm run start`. The production build intentionally disables the development editorial desk. Browser tests use a separate loopback server on 3001 and isolated test databases; test servers stop when Playwright exits.
+For production-build verification, stop development first, then run `npm run build && npm run start`. The production build intentionally disables the development editorial desk. Browser tests use a separate loopback server on 3001 and isolated test databases; test servers stop when Playwright exits. Stop `npm run dev` before the editor browser suite, because Next.js permits only one development server per checkout even on different ports.
 
 ## Cost and storage
 
