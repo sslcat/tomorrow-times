@@ -1,0 +1,1 @@
+export const publication={ name:process.env.NEXT_PUBLIC_PUBLICATION_NAME||'The Tomorrow Times',tagline:process.env.NEXT_PUBLIC_PUBLICATION_TAGLINE||'Tomorrow’s News. A Thousand Years Early.',url:process.env.SITE_URL||'http://localhost:3000',fiction:'An independent fictional newspaper from a thousand years ahead. All people, events and reporting are fictional.' };

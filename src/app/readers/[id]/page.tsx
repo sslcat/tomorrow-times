@@ -1,0 +1,6 @@
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import { getSql } from '@/lib/db';
+import { PageHeading } from '@/components/editorial';
+export const metadata={title:'Reader profile',robots:{index:false,follow:false}};
+export default async function Reader({params}:{params:Promise<{id:string}>}) {const {id}=await params,sql=getSql();const user=sql.prepare("SELECT id,name FROM users WHERE id=? AND verified=1 AND suspended=0 AND role='reader'").get(id) as {id:string;name:string}|undefined;if(!user)notFound();const history=sql.prepare("SELECT c.id,c.body,t.title,t.id thread_id FROM comments c JOIN threads t ON t.id=c.thread_id JOIN articles a ON a.id=t.article_id WHERE c.author_id=? AND c.hidden=0 AND c.spoiler=0 AND t.hidden=0 AND a.status='published' ORDER BY c.created_at DESC LIMIT 30").all(id) as {id:string;body:string;title:string;thread_id:string}[];return <><PageHeading kicker="READER PROFILE" title={user.name} description="Public discussion history. Reader commentary is separate from the fictional canon."/>{history.length?history.map(c=><article className="search-result" key={c.id}><h2><Link href={`/community/${c.thread_id}`}>{c.title}</Link></h2><p>{c.body.slice(0,300)}</p></article>):<p>No public comments yet.</p>}</>;}
