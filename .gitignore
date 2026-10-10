@@ -150,7 +150,7 @@ vite.config.ts.timestamp-*
 .turbo
 
 # Local state and private credentials
-data/
+/data/
 backups/
 *.sqlite*
 *.db*
