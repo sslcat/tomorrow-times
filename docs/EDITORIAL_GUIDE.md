@@ -29,7 +29,7 @@ Free prose receives manual claim review. Exact structured claim validation prove
 
 ## Images and identity
 
-All six illustrations are original SVG source assets included in the repository. They depict environments, objects and a stylized sports scene. They are labeled editorial illustrations, never real photographs. People receive monograms until a reviewed canonical visual reference exists. A future image provider must retain each identity reference and require approved budget; it cannot silently substitute a new face.
+All twelve illustrations are original SVG source assets included in the repository. They depict environments, objects and a stylized sports scene. They are labeled editorial illustrations, never real photographs. People receive monograms until a reviewed canonical visual reference exists. A future image provider must retain each identity reference and require approved budget; it cannot silently substitute a new face.
 
 ## Corrections and retractions
 
@@ -38,3 +38,9 @@ Never silently rewrite published history. The correction action records the prio
 ## Editorial checklist
 
 Before approving an event, inspect continuity warnings, jurisdiction, travel feasibility, causality and uncertainty. Before approving a draft, read the whole article against its events, check attribution, novelty, paragraph repetition, section voice, image reference and the current balance of desks and moods. Editing resets draft approval. Publication checks the event again under the database transaction. Publish only with the intentional final action.
+
+## V2 presentation and celebrity priority
+
+Entertainment leads the edition. Follow the current celebrity-first specification, `V2_EDITORIAL_QUEUE.md` and `V2_HEADLINE_REVIEW.md`. Forty presentation revisions are keyed to exact opening-edition fingerprints and revision 1; original text remains in the database and on the article. Any later correction takes precedence, including one that retains the same words. These changes do not rewrite canonical events. New events still require event approval, draft approval and intentional publication. Draft-only storylines never enter public discovery.
+
+Imagery assignments and future approval stages are documented in `V2_IMAGERY_WORKFLOW.md`. A pending reference renders typography, never a generated face. Approval of conceptual local illustration is not approval of new architecture or character identity.

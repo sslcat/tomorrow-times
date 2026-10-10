@@ -3,6 +3,7 @@ import { getSql } from "@/lib/db";
 import { listThreads } from "@/lib/community";
 import { sectionName } from "@/lib/contracts";
 import { PageHeading } from "@/components/editorial";
+import { getArticle } from "@/lib/queries";
 export const metadata = {
   title: "The reader’s table",
   alternates: { canonical: "/community" },
@@ -19,7 +20,10 @@ export default async function Community({
     ? params.sort!
     : "recent";
   const page = Math.max(1, Math.min(10000, Number(params.page) || 1));
-  const rows = listThreads(getSql(), sort, page, section);
+  const rows = listThreads(getSql(), sort, page, section).map((t) => ({
+    ...t,
+    title: t.official ? getArticle(t.article_id)?.title || t.title : t.title,
+  }));
   const qs = new URLSearchParams({ sort, ...(section ? { section } : {}) });
   return (
     <>

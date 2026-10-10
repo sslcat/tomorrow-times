@@ -1,9 +1,16 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getEntity, allStorylines, relatedArticles } from "@/lib/queries";
+import {
+  getEntity,
+  allEntities,
+  allStorylines,
+  relatedArticles,
+  publishedEvents,
+} from "@/lib/queries";
 import { PageHeading, StoryList } from "@/components/editorial";
 import { SaveButton } from "@/components/reader-tools";
-import { ageOn, fictionalDate } from "@/lib/calendar";
+import { ageOn, fictionalDate, displayDate } from "@/lib/calendar";
+import { Portrait, EditorialImage } from "@/components/editorial-image";
 export async function generateMetadata({
   params,
 }: {
@@ -27,6 +34,15 @@ export default async function EntityPage({
   const home = e.home ? getEntity(e.home) : null;
   const stories = allStorylines().filter((s) => s.participants.includes(e.id));
   const articles = relatedArticles(e.id, "entity");
+  const events = publishedEvents().filter(
+    (event) => event.participants.includes(e.id) || event.locationId === e.id,
+  );
+  const collaborators = allEntities().filter(
+    (person) =>
+      person.kind === "person" &&
+      person.id !== e.id &&
+      events.some((event) => event.participants.includes(person.id)),
+  );
   return (
     <>
       <PageHeading
@@ -35,19 +51,27 @@ export default async function EntityPage({
         description={e.summary}
       />
       <div className="profile-intro">
-        <div>
-          {e.kind === "person" && (
-            <div className="monogram" aria-hidden="true">
-              {e.name
-                .split(/[ -]/)
-                .map((w) => w[0])
-                .slice(0, 2)
-                .join("")}
-            </div>
+        <div className="profile-identity">
+          {e.kind === "person" ? (
+            <Portrait id={e.id} name={e.name} large />
+          ) : (
+            <EditorialImage
+              id={e.id}
+              label={e.name}
+              section={e.kind === "location" ? "science" : "business"}
+            />
           )}
-          <p className="biography">{e.biography}</p>
-          <div className="entity-chips">
-            <SaveButton id={e.id} kind="follows" />
+          <div>
+            <p className="biography">{e.biography}</p>
+            {e.kind === "person" && (
+              <p className="small muted">
+                Fictional public profile · {articles.length} published reports.
+                Portrait reference awaiting approval.
+              </p>
+            )}
+            <div className="entity-chips">
+              <SaveButton id={e.id} kind="follows" />
+            </div>
           </div>
         </div>
         <div className="fact-box">
@@ -87,6 +111,50 @@ export default async function EntityPage({
           </p>
         </div>
       </div>
+      {events.length > 0 && (
+        <section className="section-layout">
+          <div>
+            <h2 className="section-title">Life in the public record</h2>
+            <div className="timeline">
+              {events.map((event) => (
+                <article key={event.id}>
+                  <time dateTime={event.date}>{displayDate(event.date)}</time>
+                  <h3>
+                    <Link href={`/events/${event.id}`}>{event.title}</Link>
+                  </h3>
+                  <p>{event.facts[0]}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+          <aside>
+            <h2 className="section-title">Connected people</h2>
+            <div className="fact-box">
+              <p>
+                People named in the same published events. A shared story does
+                not establish a private relationship.
+              </p>
+              <div className="entity-chips">
+                {collaborators.map((person) => (
+                  <Link
+                    className="chip"
+                    key={person.id}
+                    href={`/entities/${person.id}`}
+                  >
+                    {person.name} ↗
+                  </Link>
+                ))}
+              </div>
+              {e.id === "lyra" || e.id === "teo" ? (
+                <p className="small muted">
+                  Creative collaborators. No romantic relationship or split is
+                  confirmed in the published reporting.
+                </p>
+              ) : null}
+            </div>
+          </aside>
+        </section>
+      )}
       {stories.length > 0 && (
         <>
           <h2 className="section-title">Part of the story</h2>

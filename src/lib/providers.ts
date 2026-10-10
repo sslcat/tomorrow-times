@@ -1,5 +1,6 @@
 import { z } from "zod";
 import type { CanonEvent, Draft, Entity, Storyline } from "./contracts";
+import { celebrityProposals } from "../editorial/celebrity-proposals";
 export type NewsroomContext = {
   date: string;
   entities: Entity[];
@@ -79,6 +80,22 @@ export class OfflineProvider implements NewsProvider {
     };
   }
   async draft(e: CanonEvent): Promise<Draft> {
+    const proposal = celebrityProposals.find((p) => p.event.id === e.id);
+    if (proposal) {
+      if (JSON.stringify(proposal.event) !== JSON.stringify(e)) {
+        // Schema parsing may reorder keys; compare meaningful reviewed fields.
+        if (
+          proposal.event.storylineId !== e.storylineId ||
+          JSON.stringify(proposal.event.facts) !== JSON.stringify(e.facts) ||
+          JSON.stringify(proposal.event.participants) !==
+            JSON.stringify(e.participants)
+        )
+          throw new Error(
+            "Curated draft requires the reviewed proposal facts and participants",
+          );
+      }
+      return structuredClone(proposal.draft);
+    }
     return {
       id: `${e.id}-report`,
       title: "A care plan with room to change",

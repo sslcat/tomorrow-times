@@ -4,6 +4,7 @@ import type { Article } from "@/lib/contracts";
 import { sectionName } from "@/lib/contracts";
 import { displayDate } from "@/lib/calendar";
 import { localArt } from "@/lib/providers";
+import { EditorialImage } from "./editorial-image";
 export function Art({
   name,
   priority = false,
@@ -21,7 +22,7 @@ export function Art({
       alt={art.alt}
       width={1200}
       height={780}
-      priority={priority}
+      preload={priority}
       unoptimized
     />
   );
@@ -39,7 +40,7 @@ export function ArticleCard({
     <article className={`article-card ${large ? "large" : ""}`}>
       {image && (
         <Link href={`/articles/${a.id}`} tabIndex={-1} aria-hidden="true">
-          <Art name={a.art} />
+          <EditorialImage id={a.id} label={a.title} section={a.section} />
         </Link>
       )}
       <p className="eyebrow">
@@ -78,7 +79,7 @@ export function StoryList({ articles }: { articles: Article[] }) {
             </p>
           </div>
           <Link href={`/articles/${a.id}`} tabIndex={-1} aria-hidden="true">
-            <Art name={a.art} />
+            <EditorialImage id={a.id} label={a.title} section={a.section} />
           </Link>
         </article>
       ))}

@@ -138,7 +138,7 @@ export function LiveDate({ initial, zone }: { initial: string; zone: string }) {
   return <time dateTime={date}>{displayDate(date, true)}</time>;
 }
 export function ThemeButton() {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
   return (
     <button
       className="quiet-button theme-button"

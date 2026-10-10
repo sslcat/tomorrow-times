@@ -55,8 +55,12 @@ export default function About() {
         <p>
           Published corrections carry a visible note. Retractions preserve the
           historical text with a clear label. Editorial changes and canonical
-          events have an audit trail. All illustrations are original local SVG
-          artwork; no image is presented as a photograph of a real event.
+          events have an audit trail. V2 presentation edits make headlines and
+          selected openings clearer without changing the original event record;
+          affected articles let you read their original copy. Later corrections
+          take precedence. Illustrations are original local SVGs or labeled
+          typographic treatments, never photographs. Character monograms stand
+          in for portraits until canonical visual references are approved.
         </p>
         <h2>The reader’s table</h2>
         <p>

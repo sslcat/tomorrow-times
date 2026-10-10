@@ -359,6 +359,7 @@ export function publish(
         ).document,
       ) as Storyline;
       const old = structuredClone(story);
+      if (story.status === "Proposed") story.status = "Unfolding";
       story.facts = [...new Set([...story.facts, ...event.facts])];
       sql
         .prepare(

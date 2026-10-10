@@ -1,6 +1,6 @@
 # The Tomorrow Times
 
-An original fictional newspaper from one thousand calendar years ahead. The Common Reach is a persistent science-fiction setting: decisions, relationships, match results and consequences survive between articles.
+A celebrity-first fictional news network from one thousand calendar years ahead. The Common Reach is a persistent science-fiction setting: decisions, relationships, match results and consequences survive between articles.
 
 This is a working offline-first local application, with no API keys, remote database, external fonts or paid provider calls required. All reporting and illustrations are fictional.
 
@@ -24,13 +24,21 @@ Copy `.env.example` to `.env.local` only if changing defaults. `.env.local`, loc
 
 - Forty original articles spanning all twelve editorial sections, ten inhabited locations, thirty recurring people, twelve major organizations, seventeen launch events and eight interwoven storylines.
 - Responsive server-rendered front page, article pages with linked mentions and reading progress, section pages, entity profiles, event records, storyline timelines, search, daily archives and empty states.
-- Six original local SVG editorial illustrations, light/dark reading, browser-local bookmarks/follows and a reading list.
+- A cinematic V2 entertainment lead, rich Entertainment destination, People to Watch, public career timelines and Across the Reach.
+- Twelve original local SVG editorial illustrations, a typed 92-entry image manifest, honest monogram/typographic fallbacks, light/dark reading, browser-local bookmarks/follows and a reading list.
+- Canon-preserving presentation edits for all 40 opening headlines; original copy remains accessible, and later corrections take precedence.
 - Real-calendar edition clock with an explicit leap-day policy; permanent archival dates; fictional disclosure in articles and social previews; canonical links, sitemap and robots.
 - Versioned SQLite migrations and canon, Drizzle public article queries, Zod input/output contracts and an event-first editorial workflow.
 - Protected development editorial desk: proposal review, assignments, draft editing, approval/rejection, manual scheduling, atomic publication, corrections/retractions, job history, generation pause/limits, private canon inspection and moderation foundations.
 - Read-only community with an idempotent official thread per published article, section/sort/pagination, linked discovery and honest zero participation. The internal forum services support verified-reader topics/comments/replies, spoiler fields, reactions, follows, reports and audited moderation; **no public write/auth adapter is connected**.
 
 Meet Amara Venn in the disputed Ares reserve vote, Lyra Saye and Teo Voss in a changing creative partnership, Tavi Okoro’s Comets in the Reach Six league, Nadi Rhee at the detained cargo vessel, Esmé Calder at Europa’s listening station, and the Daro family waiting to move.
+
+## V2 visual and editorial overhaul
+
+See [visual report](docs/V2_VISUAL_OVERHAUL_REPORT.md), [design system](docs/V2_DESIGN_SYSTEM.md), [headline review](docs/V2_HEADLINE_REVIEW.md), [private celebrity queue](docs/V2_EDITORIAL_QUEUE.md) and [image workflow](docs/V2_IMAGERY_WORKFLOW.md). Ten article briefs and eight character briefs are prepared; no generator is connected.
+
+`npm run newsroom:stage-v2` backs up the local database and stages three private, continuity-checked celebrity proposals. It does not approve or publish them. Use the existing authenticated editor review workflow to advance them. `npm run test:visual` checks eight public page types at seven widths against an already running port 3000 preview and saves ignored screenshots.
 
 ## Local editorial demo
 

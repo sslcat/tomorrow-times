@@ -144,6 +144,13 @@ export const draftSchema = z.object({
 });
 export type Draft = z.infer<typeof draftSchema>;
 export type Article = Draft & {
+  revision?: number;
+  presentation?: {
+    version: string;
+    title: string;
+    dek: string;
+    body: string[];
+  };
   status: string;
   publishedReal: string | null;
   publishedFiction: string | null;

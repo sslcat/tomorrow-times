@@ -7,10 +7,10 @@ test("desktop front page, article, saved state and source record", async ({
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-    "The water is on the ledger. Is it in the reservoir?",
+    "Lyra Saye postpones Ares benefit. The crew still gets paid.",
   );
   await expect(
-    page.getByText("A FICTIONAL UNIVERSE. A VERY HUMAN STORY."),
+    page.getByText("FICTIONAL NEWS. REAL HUMAN DRAMA."),
   ).toBeVisible();
   await expect(page.locator("img").first()).toBeVisible();
   fs.mkdirSync("artifacts", { recursive: true });
@@ -18,7 +18,7 @@ test("desktop front page, article, saved state and source record", async ({
   await page.screenshot({ path: "artifacts/home-desktop.png", fullPage: true });
   await page.getByRole("heading", { level: 1 }).getByRole("link").click();
   await expect(page.locator("#article-body")).toContainText(
-    "The assembly deferred",
+    "Lyra Saye has postponed",
   );
   await page.getByRole("button", { name: "Save article", exact: true }).click();
   await expect(
@@ -27,7 +27,7 @@ test("desktop front page, article, saved state and source record", async ({
   await page.goto("/reading-list");
   await expect(
     page.getByRole("heading", {
-      name: "The water is on the ledger. Is it in the reservoir?",
+      name: "Lyra Saye postpones Ares benefit. The crew still gets paid.",
     }),
   ).toBeVisible();
   await page.reload();
@@ -79,7 +79,7 @@ test("storyline, archives, community, and production write restrictions", async 
   await page.goto("/archives?date=3026-10-05");
   await expect(
     page.getByRole("heading", {
-      name: "Comets hold on, 4–3; the tether question stays open",
+      name: "Comets beat Saints 4–3 as referee reviews a tether measurement",
     }),
   ).toBeVisible();
   await page.goto("/archives?date=3099-01-01");
@@ -145,6 +145,16 @@ for (const [name, width] of [
         path: `artifacts/home-${name}.png`,
         fullPage: true,
       });
+    await page.locator("img").evaluateAll((nodes) =>
+      nodes.forEach((n) => {
+        (n as HTMLImageElement).loading = "eager";
+      }),
+    );
+    await page
+      .locator("img")
+      .evaluateAll((nodes) =>
+        Promise.all(nodes.map((n) => (n as HTMLImageElement).decode())),
+      );
     const images = await page
       .locator("img")
       .evaluateAll((nodes) =>
@@ -198,9 +208,9 @@ test("the open masthead crosses editorial midnight while article dates stay fixe
   await page.clock.install({ time: new Date("2026-10-10T04:59:55Z") });
   await page.goto("/");
   // Wait for React hydration before advancing the interval created by LiveDate.
-  await page.getByRole("button", { name: "Use dark theme" }).click();
+  await page.getByRole("button", { name: "Use light theme" }).click();
   await expect(
-    page.getByRole("button", { name: "Use light theme" }),
+    page.getByRole("button", { name: "Use dark theme" }),
   ).toBeVisible();
   await page.clock.runFor(16000);
   await expect(page.locator(".masthead-date time")).toHaveText(
@@ -210,4 +220,91 @@ test("the open masthead crosses editorial midnight while article dates stay fixe
   await expect(page.locator(".article-meta time")).toHaveText(
     "October 9, 3026",
   );
+});
+
+test("celebrity coverage, original copy, discussion titles and honest identity art remain connected", async ({
+  page,
+}) => {
+  await page.goto("/sections/entertainment");
+  await expect(page.locator("h1")).toHaveText("Entertainment.");
+  await expect(
+    page.locator("main").getByRole("heading", {
+      name: "Teo Voss goes solo — and leaves the room noise in",
+    }),
+  ).toBeVisible();
+  await expect(page.locator(".people-grid .person-card")).toHaveCount(6);
+  await expect(page.locator(".module-note")).toContainText(
+    "No audience rankings",
+  );
+  await page.goto("/articles/lyra-after-the-lights");
+  await page.locator(".presentation-note summary").click();
+  await expect(page.locator(".presentation-note")).toContainText(
+    "Lyra Saye is leaving the big room quiet",
+  );
+  await page
+    .getByRole("link", { name: "Open this article’s discussion" })
+    .click();
+  await expect(page.locator("h1")).toHaveText(
+    "Lyra Saye postpones Ares benefit. The crew still gets paid.",
+  );
+  await page.goto("/community?section=entertainment&sort=popular");
+  await expect(page.locator(".thread-count strong")).toHaveText(["0", "0"]);
+  await page.goto("/entities/lyra");
+  await expect(page.locator(".portrait")).toContainText("PORTRAIT PENDING");
+  await expect(page.locator(".timeline")).toContainText(
+    "Teo Voss releases a solo recording",
+  );
+  await expect(page.locator(".timeline")).toContainText(
+    "The Ares relay benefit is postponed",
+  );
+  await page.goto(
+    "/search?q=Lyra%20Saye%20is%20leaving%20the%20big%20room%20quiet",
+  );
+  await expect(page.locator(".search-result h2")).toHaveText(
+    "Lyra Saye postpones Ares benefit. The crew still gets paid.",
+  );
+});
+
+test("theme contrast, reduced motion and first-viewport typography", async ({
+  page,
+}) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/");
+  const pairs = async () =>
+    page.evaluate(() => {
+      const style = getComputedStyle(document.documentElement);
+      const rgb = (s: string) => {
+        const hex = s.trim().replace("#", "");
+        const v = hex.length === 3 ? [...hex].map((c) => c + c).join("") : hex;
+        return [0, 2, 4]
+          .map((i) => parseInt(v.slice(i, i + 2), 16) / 255)
+          .map((c) =>
+            c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4,
+          );
+      };
+      const lum = (s: string) => {
+        const [r, g, b] = rgb(s);
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+      };
+      return ["--paper", "--panel", "--raised"].flatMap((bg) =>
+        ["--ink", "--muted", "--accent"].map((fg) => {
+          const a = lum(style.getPropertyValue(bg)),
+            b = lum(style.getPropertyValue(fg));
+          return {
+            bg,
+            fg,
+            ratio: (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05),
+          };
+        }),
+      );
+    });
+  for (const p of await pairs())
+    expect(p.ratio, JSON.stringify(p)).toBeGreaterThanOrEqual(4.5);
+  await expect(page.locator("html")).toHaveCSS("scroll-behavior", "auto");
+  await page.getByRole("button", { name: "Use light theme" }).click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+  for (const p of await pairs())
+    expect(p.ratio, JSON.stringify(p)).toBeGreaterThanOrEqual(4.5);
+  await page.getByRole("button", { name: "Use dark theme" }).click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
 });

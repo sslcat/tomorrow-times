@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { allEntities } from "@/lib/queries";
 import { PageHeading } from "@/components/editorial";
+import { Portrait, EditorialImage } from "@/components/editorial-image";
 export const metadata = {
   title: "People, places & institutions",
   alternates: { canonical: "/universe" },
@@ -40,6 +41,17 @@ export default async function Universe({
       <div className="profile-grid">
         {entities.map((e) => (
           <article className="profile-card" key={e.id}>
+            <Link href={`/entities/${e.id}`} tabIndex={-1} aria-hidden="true">
+              {e.kind === "person" ? (
+                <Portrait id={e.id} name={e.name} />
+              ) : (
+                <EditorialImage
+                  id={e.id}
+                  label={e.name}
+                  section={e.kind === "location" ? "science" : "business"}
+                />
+              )}
+            </Link>
             <p className="eyebrow">{e.occupation || e.kind}</p>
             <h2>
               <Link href={`/entities/${e.id}`}>{e.name}</Link>

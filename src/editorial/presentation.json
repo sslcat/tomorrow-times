@@ -1,0 +1,247 @@
+{
+  "the-water-that-isnt-there": {
+    "expectedHash": "e20a36304b4a727a37780b3d7e95152899d7f4ec15d3136e186d7b3d96a03335",
+    "title": "Ares delays water vote after two reserve records fail to line up",
+    "dek": "Amara Venn gets 72 hours for a public pressure test; Helix disputes the claim that the city has overstated usable water.",
+    "opening": "The Ares assembly has delayed its emergency water allocation vote by seventy-two hours after a night-shift log exposed a mismatch with the public ledger. Steward Amara Venn must now show how much water the city can actually deliver.",
+    "evidence": ["reserve-vote"]
+  },
+  "a-signal-without-a-name": {
+    "expectedHash": "ec7950ffbe69dcaf7eca18dca7986abfbda1cea7b16fc22112d255c598e7691b",
+    "title": "Europa heard a repeating signal. Now comes the third-sensor test.",
+    "dek": "Two sensors recorded the pattern; Esmé Calder’s team is checking for shared errors before claiming a discovery.",
+    "opening": "Pelagos has begun an independent sensor test after two instruments recorded a repeating acoustic pattern beneath Europa’s ice. The source remains unknown, and the team has made no claim of life.",
+    "evidence": ["sensor-test"]
+  },
+  "lyra-after-the-lights": {
+    "expectedHash": "93ffe220264b696d8733253fe4d3a2611fbc27b56460b5e8d2869b50a5d9c6a3",
+    "title": "Lyra Saye postpones Ares benefit. The crew still gets paid.",
+    "dek": "No new date, a solo record from Teo Voss, and one promise Lantern Records is keeping: the stage crew’s wages.",
+    "opening": "Lyra Saye has postponed the Ares relay benefit, with no replacement date announced. Lantern Records says the contracted stage crew will still be paid, while questions about her creative partnership with Teo Voss remain unanswered.",
+    "evidence": ["benefit-delay"]
+  },
+  "a-captain-and-a-consignee": {
+    "expectedHash": "8a29520e0bfbf97b93f775a1ea944a979617f3b7421d894c96aba660c1ced96d",
+    "title": "Court orders a cargo inventory. Pike’s medicine stays on board.",
+    "dek": "An independent inventory can begin, but the freighter remains detained and its captain faces no criminal charge.",
+    "evidence": ["cargo-order"]
+  },
+  "the-table-points-nobody-can-argue-with": {
+    "expectedHash": "9f6541bb574959e7d15913e9a9af7a247d1d86fa988385ece4990ea066eea099",
+    "title": "Saints win 3–1. The Comets still lead by a point.",
+    "dek": "The opening round ends with a tight table and an equipment review that has changed no result.",
+    "evidence": ["saints-ribbons"]
+  },
+  "one-more-supper-on-ceres": {
+    "expectedHash": "8a08ed65c9bb40e7efb392a0b3a43af648d2d1d102945a5a1bbd1b4e5da57d6a",
+    "title": "Ada Daro agrees to a meal rota — but keeps Thursday to herself",
+    "dek": "With her family’s move to Mars delayed, three households offer company on the days Ada actually wants it.",
+    "opening": "Three neighboring households have agreed to share meals with Ada Daro while her family prepares for a delayed move to Mars. Ada rejected the first timetable: she wanted Thursday to herself.",
+    "evidence": ["care-rota"]
+  },
+  "the-fine-print-of-passage": {
+    "expectedHash": "34909c5f75d5005c9989f9a3743a9e2cadb59d05749edb522b8cfc919a1e22ac",
+    "title": "Meridian will cover delayed freight. Delayed families are on their own.",
+    "dek": "Sol Arendt’s Mars corridor guarantee excludes passenger costs, even when the same ship carries both.",
+    "evidence": ["freight-guarantee"]
+  },
+  "the-night-oven": {
+    "expectedHash": "4c9347e883ec4069228039d0a2894ab6db44cb7b623acf40b798768d0b9a91f2",
+    "title": "Valles gives its late-shift workers four weeks of a shared evening oven",
+    "dek": "Rafi Nacre and neighboring cooks will split the power bill to see whether the market can stay open later.",
+    "opening": "Valles has approved a four-week shared evening oven trial, giving late-shift workers a chance to buy a hot meal after the usual closing time. Baker Rafi Nacre and neighboring cooks will share metered power costs.",
+    "evidence": ["oven-trial"]
+  },
+  "what-the-pressure-log-shows": {
+    "expectedHash": "979a7bd2c607e0f2cc31f5710e3e2cb642258237f921b4352fd4aba55fc97630",
+    "title": "Ares releases a pump log. It still cannot prove how much water is usable.",
+    "dek": "The night-shift record helps compare timings, but valve positions and isolated pipes remain part of the puzzle.",
+    "evidence": ["log-release"]
+  },
+  "amara-venns-smallest-majority": {
+    "expectedHash": "3902981e715f6edb1115905aebdbe59f666da62caddb9a984f66737f7477355a",
+    "title": "Amara Venn buys 72 hours — and puts her water promise to the test",
+    "dek": "The delayed vote gives her opponents time to challenge the ledger and households more time to wait.",
+    "evidence": ["reserve-vote"]
+  },
+  "the-technician-on-leave": {
+    "expectedHash": "c4388b5951d540a10803a116a2065f9be36c3d42d67cb3e0d4781580b77ecfc5",
+    "title": "Soren Dax is on paid leave as Ares debates his pump log",
+    "dek": "The technician faces a safety review; the authority has announced no disciplinary finding.",
+    "evidence": ["log-release"]
+  },
+  "a-public-test-needs-public-rules": {
+    "expectedHash": "5b598a13a886e4ef3ac3806ece418b91881f56bfa8c5e25cc6263fecc1f77e02",
+    "title": "Before Ares tests its water reserves, it must say what counts",
+    "dek": "A room full of witnesses cannot settle a dispute if nobody agrees what the gauge is meant to measure.",
+    "evidence": ["reserve-vote"]
+  },
+  "what-a-delay-sounds-like": {
+    "expectedHash": "86dd3c1706b16c7b4995d38ce499a229a802b173fa15e3fe8d85ce26e7fce303",
+    "title": "Lyra’s Mars audience was always going to hear the show later",
+    "dek": "The postponed benefit was a Luna performance relayed to Ares, where distance puts a delay between singer and listener.",
+    "evidence": ["benefit-delay"]
+  },
+  "teo-voss-room-tone": {
+    "expectedHash": "bbf5c0eb4d77341c12e125e0cb93b9a31a6bacac8b3f7aeae1aacc279a8dd437",
+    "title": "Teo Voss goes solo — and leaves the room noise in",
+    "dek": "A chair scrape, a breath, the hum of life support: Voss’s spare new recording rewards a closer listen.",
+    "evidence": ["room-recording"]
+  },
+  "the-crew-contract": {
+    "expectedHash": "dd03e833d5caf2c285d0eef495143295ed811bfb1e91d74da4769644bf6d1c1c",
+    "title": "Lyra’s show is off. Mara Isk says the wages aren’t.",
+    "dek": "The producer’s cooperative contract protects the people who built a show the audience has yet to hear.",
+    "evidence": ["benefit-delay"]
+  },
+  "a-credit-is-not-a-confession": {
+    "expectedHash": "cc96d59aa818aac5318a7231437a98027843286f4128690a24545ee65da3e8a5",
+    "title": "No guest vocal. No confirmed split. What Teo’s credits actually say.",
+    "dek": "His solo release leaves Lyra Saye’s name out of the vocals; it tells us nothing certain about their private lives.",
+    "evidence": ["room-recording"]
+  },
+  "four-three-and-a-loose-question": {
+    "expectedHash": "1a2df76f13139e553e9879e802f918ba3bfec495156c5986bc36e8f033634734",
+    "title": "Comets beat Saints 4–3 as referee reviews a tether measurement",
+    "dek": "Tavi Okoro’s side keeps its opening win while Pema Das’s equipment question goes to the league.",
+    "evidence": ["comets-saints"]
+  },
+  "cato-bells-last-pass": {
+    "expectedHash": "793467cb6a1ca526873be70041f2d408c91426a266fe5cbf44f616d02e25b5df",
+    "title": "Cato Bell’s late equalizer rescues a point for the Ribbons",
+    "dek": "The 2–2 draw leaves the Comets on four points and gives the Ribbons their first.",
+    "evidence": ["comets-ribbons"]
+  },
+  "how-the-table-is-counted": {
+    "expectedHash": "2cea35746777ed87f44c26d33da995f78b6c606af5155061291418ebb3b4d040",
+    "title": "Why the Comets have four points and the Saints have three",
+    "dek": "A win pays three, a draw pays one, and the equipment review has not changed the opening results.",
+    "evidence": ["saints-ribbons"]
+  },
+  "safety-before-the-next-whistle": {
+    "expectedHash": "054b9ba2021c2640250143416c3f34c2693b438fbc4d79a0331785fde8c84505",
+    "title": "Players deserve to see the tether limits before the next match",
+    "dek": "Sima Ro should explain the measured range, the tolerance and the reason players are asked to trust it.",
+    "evidence": ["comets-saints"]
+  },
+  "the-name-on-the-manifest": {
+    "expectedHash": "312d9cb14150f6d8608c516130cb4fa359bcb7f51f0aa2393147ed0654ca2cae",
+    "title": "One disputed name has kept a medicine freighter at Ceres",
+    "dek": "Investigators suspect a delivery entry was changed after loading; who changed it, and why, remain unproven.",
+    "evidence": ["cargo-hold"]
+  },
+  "cold-storage-warm-arguments": {
+    "expectedHash": "b2097e47f011a2f5c3b19398db94b556fab5045f6b341e24a0755dee2fe36f26",
+    "title": "The medicine on Pike’s ship needs cooling while the court takes its time",
+    "dek": "No spoilage has been established, but every day in detention adds another day to the cold-storage record.",
+    "evidence": ["cargo-hold"]
+  },
+  "leena-moss-keeps-two-lists": {
+    "expectedHash": "e9c020c53151437733845bec9d5f42328c62a3a56793717eb2c557e34d3e93a4",
+    "title": "Pike’s lawyer wants evidence about the captain, not just his cargo",
+    "dek": "Leena Moss says a court-ordered inventory cannot establish who changed the delivery entry or what Pike knew.",
+    "evidence": ["cargo-order"]
+  },
+  "a-warrant-doesnt-travel-by-itself": {
+    "expectedHash": "c00a4d2045e3e015450273ac31237b729c829c3ebafebde8d8d8f63d46333011",
+    "title": "Pike’s ship can cross borders. A Ceres warrant cannot do that alone.",
+    "dek": "The cargo case exposes the limits of shared corridors: each port still controls its own criminal process.",
+    "evidence": ["cargo-hold"]
+  },
+  "two-sensors-one-question": {
+    "expectedHash": "899a96fe64d97833d5392d5a8e16cacbd7776feecc445bf2e63d7168e3443f85",
+    "title": "Two Europa sensors agree. Could they share the same mistake?",
+    "dek": "Common clocks, power and vibrations are all under examination as Pelagos investigates its repeating pattern.",
+    "evidence": ["signal-repeat"]
+  },
+  "mira-and-the-unopened-door": {
+    "expectedHash": "44ace4feefdec125bfb2acf5b36fa793d66b434b0cba167ea447c2cb63be19ab",
+    "title": "Europa’s signal has not earned anyone permission to drill",
+    "dek": "Charter officer Mira-of-Nine is keeping the ocean boundary in place while the scientists keep listening.",
+    "evidence": ["sensor-test"]
+  },
+  "the-apprentices-calibration": {
+    "expectedHash": "c842488d5c3b1c7d9cdd913d15b5e9815485b69937f2d1c50ab7cad83d598dd0",
+    "title": "Jun Wren checks the cables behind Europa’s big science question",
+    "dek": "An independent sensor needs a documented clock and mount before its reading can settle anything.",
+    "evidence": ["sensor-test"]
+  },
+  "uncertainty-is-a-result": {
+    "expectedHash": "db3206cc2287fc4e56f6f6132178acac8bffc3e8c379c16747c9c00bf1ec2697",
+    "title": "Europa has an unexplained sound, not evidence of life",
+    "dek": "If the cause turns out to be a loose mount, the listening team will still have learned something worth reporting.",
+    "evidence": ["signal-repeat"]
+  },
+  "the-bean-plant-question": {
+    "expectedHash": "dbc7e7a5f458515b25214e1c0777dcfaf548eaca02e74baf12f15751b118c910",
+    "title": "Noa Daro is moving to Mars. Can the bean plant come?",
+    "dek": "The school records are ready, but the family has yet to decide whether a living experiment can make the trip.",
+    "evidence": ["daro-delay"]
+  },
+  "conditional-is-a-long-word": {
+    "expectedHash": "27c19af8ef518f53dde70954be25a6e2a283ae64cad130d7b5ce29af54f6be3d",
+    "title": "The Daros have a possible home on Mars — and no departure date",
+    "dek": "Their housing approval remains conditional while a delayed move keeps the family half packed on Ceres.",
+    "evidence": ["daro-delay"]
+  },
+  "ada-chooses-thursday": {
+    "expectedHash": "3d9843d6959db0dda2c522c1937e6a3d72077b71ee85d9d253a4c14e52fbe6d3",
+    "title": "Ada Daro wants help with supper, not company every night",
+    "dek": "The neighborhood meal plan leaves her a say over who visits and when.",
+    "evidence": ["care-rota"]
+  },
+  "moving-at-the-speed-of-a-ship": {
+    "expectedHash": "581e866a135a5aa81673acf79bb9f5457da0724e93a4f93078f73559a8e4df7d",
+    "title": "Noa’s school file can reach Mars weeks before Noa can",
+    "dek": "The Daro family’s delayed move shows what happens when paperwork travels faster than people.",
+    "evidence": ["daro-delay"]
+  },
+  "the-council-asks-for-the-exclusions": {
+    "expectedHash": "1b8711199335bd4a88cba5edaf2dde4c74cc08b770ff1a7b95fbf968cbf811ef",
+    "title": "Tamsin Quill asks corridor bidders to spell out what they won’t pay",
+    "dek": "The council wants the exclusions on the table before a hearing; no replacement contract has been awarded.",
+    "evidence": ["contract-hearing"]
+  },
+  "two-companies-one-pipe": {
+    "expectedHash": "9253f9b9206468d5aa4d311095eebbc8074f49e458ba9de42824148ea6e4adfe",
+    "title": "Meridian wants the Mars corridor. Rival Helix still runs its pumps.",
+    "dek": "A new freight deal would still depend on the infrastructure neither bidder can wish away.",
+    "evidence": ["freight-guarantee"]
+  },
+  "rescue-is-not-a-ticket": {
+    "expectedHash": "118d2a804af6d65a90bb4e442fdee9e1b7dc2b30d0379b06690250a95d1db3a0",
+    "title": "The Reach guarantees rescue access, not a free journey home",
+    "dek": "Passenger groups want to know where the corridor charter ends and the commercial promises begin.",
+    "evidence": ["contract-hearing"]
+  },
+  "the-cost-of-waiting": {
+    "expectedHash": "467769667484a1d3fecc735786309b27277bd9aaf59968872725f8cb0a55d071",
+    "title": "Delayed families pay for extra rooms. Corridor bids should count that.",
+    "dek": "Meridian excludes passenger delay costs; the council should make the household bill visible before choosing a contract.",
+    "evidence": ["freight-guarantee"]
+  },
+  "the-path-through-the-reeds": {
+    "expectedHash": "b1dacc7a0569875cf413610f1cba35a0f929ce8dd850a54cdd91cfcf72873c9b",
+    "title": "Earth’s river path stays open while volunteers plant new reeds",
+    "dek": "Nell Fenn’s team will mark walking lanes so residents and their dogs can keep using the route.",
+    "evidence": ["river-path"]
+  },
+  "the-oven-minutes": {
+    "expectedHash": "6ad9f91b0ca84c84f02a35ed2356f29c6a0f48dbdba97ea9bf5512e82350ada0",
+    "title": "Valles cooks discover that not all oven minutes are equal",
+    "dek": "Bread takes the hottest chamber; the next dish borrows the cooling heat, and somebody has to divide the bill.",
+    "evidence": ["oven-trial"]
+  },
+  "a-public-garden-can-be-used": {
+    "expectedHash": "42903ff1c7165a089f7229430509a64745a736d2efd5aab91faf18b9eb550b9f",
+    "title": "Let people walk through the river restoration, muddy shoes and all",
+    "dek": "Nell Fenn’s temporary lanes make room for daily life while the new reed beds take root.",
+    "evidence": ["river-path"]
+  },
+  "four-weeks-to-keep-the-lights-on": {
+    "expectedHash": "deae86502e709c7f8dfce49ccc88ce3077a61fdc28bcc772da89eb687e6a87fb",
+    "title": "Can a shared oven keep Valles’s evening market in business?",
+    "dek": "The four-week trial must cover power, affordable meals and the people who stay to clean up.",
+    "evidence": ["oven-trial"]
+  }
+}

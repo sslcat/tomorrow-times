@@ -2,6 +2,7 @@ import { and, desc, eq } from "drizzle-orm";
 import { getDb, getSql, type Sqlite } from "./db";
 import { articlesTable } from "./schema";
 import { ageOn } from "./calendar";
+import { presentArticle } from "./editorial-copy";
 import type {
   Article,
   CanonEvent,
@@ -17,16 +18,18 @@ type ArticleRow = {
   published_real: string | null;
   published_fiction: string | null;
   scheduled_at: string | null;
+  revision?: number;
 };
 export function articleFromRow(row: ArticleRow): Article {
-  return {
+  return presentArticle({
     ...(JSON.parse(row.document) as Draft),
     title: row.title,
     status: row.status,
     publishedReal: row.published_real,
     publishedFiction: row.published_fiction,
     scheduledAt: row.scheduled_at,
-  };
+    revision: row.revision,
+  });
 }
 export function allArticles(section?: string): Article[] {
   return getDb()
@@ -40,14 +43,17 @@ export function allArticles(section?: string): Article[] {
     )
     .orderBy(desc(articlesTable.publishedFiction))
     .all()
-    .map((row) => ({
-      ...row.document,
-      title: row.title,
-      status: row.status,
-      publishedReal: row.publishedReal,
-      publishedFiction: row.publishedFiction,
-      scheduledAt: row.scheduledAt,
-    }));
+    .map((row) =>
+      presentArticle({
+        ...row.document,
+        title: row.title,
+        status: row.status,
+        publishedReal: row.publishedReal,
+        publishedFiction: row.publishedFiction,
+        scheduledAt: row.scheduledAt,
+        revision: row.revision,
+      }),
+    );
 }
 export function getArticle(id: string, sql = getSql()): Article | undefined {
   const row = sql
@@ -90,7 +96,11 @@ export const allEntities = (sql = getSql()) =>
 export const getEntity = (id: string) => allEntities().find((e) => e.id === id);
 export const allStorylines = (sql = getSql()) =>
   (
-    sql.prepare("SELECT document FROM storylines ORDER BY id").all() as {
+    sql
+      .prepare(
+        "SELECT document FROM storylines WHERE id IN (SELECT storyline_id FROM events WHERE status='published') ORDER BY id",
+      )
+      .all() as {
       document: string;
     }[]
   ).map((row) => {
@@ -161,7 +171,11 @@ export function search(query: string, sql = getSql()): SearchResult[] {
   ).map(articleFromRow);
   return [
     ...articles
-      .filter((a) => matches(`${a.title} ${a.dek} ${a.body.join(" ")}`))
+      .filter((a) =>
+        matches(
+          `${a.title} ${a.dek} ${a.body.join(" ")} ${a.presentation?.title || ""}`,
+        ),
+      )
       .map((a) => ({
         id: a.id,
         title: a.title,

@@ -1,0 +1,1416 @@
+{
+  "the-water-that-isnt-there": {
+    "id": "type-the-water-that-isnt-there",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["reserve-vote"],
+      "approvedCharacterRefs": [],
+      "briefId": "the-water-that-isnt-there"
+    },
+    "treatmentLabel": "72 HOURS"
+  },
+  "a-signal-without-a-name": {
+    "id": "type-a-signal-without-a-name",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["sensor-test"],
+      "approvedCharacterRefs": [],
+      "briefId": "a-signal-without-a-name"
+    }
+  },
+  "lyra-after-the-lights": {
+    "id": "type-lyra-after-the-lights",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["benefit-delay"],
+      "approvedCharacterRefs": [],
+      "briefId": "lyra-after-the-lights"
+    }
+  },
+  "a-captain-and-a-consignee": {
+    "id": "type-a-captain-and-a-consignee",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["cargo-order"],
+      "approvedCharacterRefs": [],
+      "briefId": "a-captain-and-a-consignee"
+    }
+  },
+  "the-table-points-nobody-can-argue-with": {
+    "id": "type-the-table-points-nobody-can-argue-with",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["saints-ribbons"],
+      "approvedCharacterRefs": [],
+      "briefId": "the-table-points-nobody-can-argue-with"
+    },
+    "treatmentLabel": "ONE POINT APART"
+  },
+  "one-more-supper-on-ceres": {
+    "id": "type-one-more-supper-on-ceres",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["care-rota"],
+      "approvedCharacterRefs": [],
+      "briefId": "one-more-supper-on-ceres"
+    },
+    "treatmentLabel": "THURSDAY IS MINE"
+  },
+  "the-fine-print-of-passage": {
+    "id": "type-the-fine-print-of-passage",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["freight-guarantee"],
+      "approvedCharacterRefs": [],
+      "briefId": "the-fine-print-of-passage"
+    },
+    "treatmentLabel": "FREIGHT ONLY"
+  },
+  "the-night-oven": {
+    "id": "type-the-night-oven",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["oven-trial"],
+      "approvedCharacterRefs": [],
+      "briefId": "the-night-oven"
+    },
+    "treatmentLabel": "THE LATE SHIFT"
+  },
+  "what-the-pressure-log-shows": {
+    "id": "type-what-the-pressure-log-shows",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["log-release"],
+      "approvedCharacterRefs": [],
+      "briefId": "what-the-pressure-log-shows"
+    },
+    "treatmentLabel": "READ THE LOG"
+  },
+  "amara-venns-smallest-majority": {
+    "id": "type-amara-venns-smallest-majority",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["reserve-vote"],
+      "approvedCharacterRefs": [],
+      "briefId": "amara-venns-smallest-majority"
+    },
+    "treatmentLabel": "THE TEST AHEAD"
+  },
+  "the-technician-on-leave": {
+    "id": "type-the-technician-on-leave",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["log-release"],
+      "approvedCharacterRefs": [],
+      "briefId": "the-technician-on-leave"
+    },
+    "treatmentLabel": "PAID LEAVE"
+  },
+  "a-public-test-needs-public-rules": {
+    "id": "type-a-public-test-needs-public-rules",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["reserve-vote"],
+      "approvedCharacterRefs": [],
+      "briefId": "a-public-test-needs-public-rules"
+    },
+    "treatmentLabel": "WHAT COUNTS?"
+  },
+  "what-a-delay-sounds-like": {
+    "id": "type-what-a-delay-sounds-like",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["benefit-delay"],
+      "approvedCharacterRefs": [],
+      "briefId": "what-a-delay-sounds-like"
+    },
+    "treatmentLabel": "LIVE HERE. LATER THERE."
+  },
+  "teo-voss-room-tone": {
+    "id": "type-teo-voss-room-tone",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["room-recording"],
+      "approvedCharacterRefs": [],
+      "briefId": "teo-voss-room-tone"
+    }
+  },
+  "the-crew-contract": {
+    "id": "type-the-crew-contract",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["benefit-delay"],
+      "approvedCharacterRefs": [],
+      "briefId": "the-crew-contract"
+    }
+  },
+  "a-credit-is-not-a-confession": {
+    "id": "type-a-credit-is-not-a-confession",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["room-recording"],
+      "approvedCharacterRefs": [],
+      "briefId": "a-credit-is-not-a-confession"
+    },
+    "treatmentLabel": "NO GUEST VOCAL"
+  },
+  "four-three-and-a-loose-question": {
+    "id": "type-four-three-and-a-loose-question",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["comets-saints"],
+      "approvedCharacterRefs": [],
+      "briefId": "four-three-and-a-loose-question"
+    }
+  },
+  "cato-bells-last-pass": {
+    "id": "type-cato-bells-last-pass",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["comets-ribbons"],
+      "approvedCharacterRefs": [],
+      "briefId": "cato-bells-last-pass"
+    },
+    "treatmentLabel": "THE EQUALIZER"
+  },
+  "how-the-table-is-counted": {
+    "id": "type-how-the-table-is-counted",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["saints-ribbons"],
+      "approvedCharacterRefs": [],
+      "briefId": "how-the-table-is-counted"
+    },
+    "treatmentLabel": "THREE. ONE. ZERO."
+  },
+  "safety-before-the-next-whistle": {
+    "id": "type-safety-before-the-next-whistle",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["comets-saints"],
+      "approvedCharacterRefs": [],
+      "briefId": "safety-before-the-next-whistle"
+    },
+    "treatmentLabel": "BEFORE THE WHISTLE"
+  },
+  "the-name-on-the-manifest": {
+    "id": "type-the-name-on-the-manifest",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["cargo-hold"],
+      "approvedCharacterRefs": [],
+      "briefId": "the-name-on-the-manifest"
+    },
+    "treatmentLabel": "THE DISPUTED NAME"
+  },
+  "cold-storage-warm-arguments": {
+    "id": "type-cold-storage-warm-arguments",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["cargo-hold"],
+      "approvedCharacterRefs": [],
+      "briefId": "cold-storage-warm-arguments"
+    },
+    "treatmentLabel": "KEEP IT COLD"
+  },
+  "leena-moss-keeps-two-lists": {
+    "id": "type-leena-moss-keeps-two-lists",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["cargo-order"],
+      "approvedCharacterRefs": [],
+      "briefId": "leena-moss-keeps-two-lists"
+    },
+    "treatmentLabel": "CARGO ≠ CAPTAIN"
+  },
+  "a-warrant-doesnt-travel-by-itself": {
+    "id": "type-a-warrant-doesnt-travel-by-itself",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["cargo-hold"],
+      "approvedCharacterRefs": [],
+      "briefId": "a-warrant-doesnt-travel-by-itself"
+    },
+    "treatmentLabel": "WHERE AUTHORITY ENDS"
+  },
+  "two-sensors-one-question": {
+    "id": "type-two-sensors-one-question",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["signal-repeat"],
+      "approvedCharacterRefs": [],
+      "briefId": "two-sensors-one-question"
+    },
+    "treatmentLabel": "SAME SIGNAL?"
+  },
+  "mira-and-the-unopened-door": {
+    "id": "type-mira-and-the-unopened-door",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["sensor-test"],
+      "approvedCharacterRefs": [],
+      "briefId": "mira-and-the-unopened-door"
+    },
+    "treatmentLabel": "NO DRILLING"
+  },
+  "the-apprentices-calibration": {
+    "id": "type-the-apprentices-calibration",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["sensor-test"],
+      "approvedCharacterRefs": [],
+      "briefId": "the-apprentices-calibration"
+    },
+    "treatmentLabel": "CHECK THE CLOCK"
+  },
+  "uncertainty-is-a-result": {
+    "id": "type-uncertainty-is-a-result",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["signal-repeat"],
+      "approvedCharacterRefs": [],
+      "briefId": "uncertainty-is-a-result"
+    },
+    "treatmentLabel": "STILL UNKNOWN"
+  },
+  "the-bean-plant-question": {
+    "id": "type-the-bean-plant-question",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["daro-delay"],
+      "approvedCharacterRefs": [],
+      "briefId": "the-bean-plant-question"
+    },
+    "treatmentLabel": "CAN IT COME?"
+  },
+  "conditional-is-a-long-word": {
+    "id": "type-conditional-is-a-long-word",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["daro-delay"],
+      "approvedCharacterRefs": [],
+      "briefId": "conditional-is-a-long-word"
+    },
+    "treatmentLabel": "NOT HOME YET"
+  },
+  "ada-chooses-thursday": {
+    "id": "type-ada-chooses-thursday",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["care-rota"],
+      "approvedCharacterRefs": [],
+      "briefId": "ada-chooses-thursday"
+    },
+    "treatmentLabel": "ROOM TO SAY NO"
+  },
+  "moving-at-the-speed-of-a-ship": {
+    "id": "type-moving-at-the-speed-of-a-ship",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["daro-delay"],
+      "approvedCharacterRefs": [],
+      "briefId": "moving-at-the-speed-of-a-ship"
+    },
+    "treatmentLabel": "THE FILE ARRIVES FIRST"
+  },
+  "the-council-asks-for-the-exclusions": {
+    "id": "type-the-council-asks-for-the-exclusions",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["contract-hearing"],
+      "approvedCharacterRefs": [],
+      "briefId": "the-council-asks-for-the-exclusions"
+    },
+    "treatmentLabel": "READ THE EXCLUSIONS"
+  },
+  "two-companies-one-pipe": {
+    "id": "type-two-companies-one-pipe",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["freight-guarantee"],
+      "approvedCharacterRefs": [],
+      "briefId": "two-companies-one-pipe"
+    },
+    "treatmentLabel": "SHARED PIPES"
+  },
+  "rescue-is-not-a-ticket": {
+    "id": "type-rescue-is-not-a-ticket",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["contract-hearing"],
+      "approvedCharacterRefs": [],
+      "briefId": "rescue-is-not-a-ticket"
+    },
+    "treatmentLabel": "RESCUE ≠ PASSAGE"
+  },
+  "the-cost-of-waiting": {
+    "id": "type-the-cost-of-waiting",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["freight-guarantee"],
+      "approvedCharacterRefs": [],
+      "briefId": "the-cost-of-waiting"
+    },
+    "treatmentLabel": "WHO PAYS TO WAIT?"
+  },
+  "the-path-through-the-reeds": {
+    "id": "type-the-path-through-the-reeds",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["river-path"],
+      "approvedCharacterRefs": [],
+      "briefId": "the-path-through-the-reeds"
+    },
+    "treatmentLabel": "THE PATH STAYS OPEN"
+  },
+  "the-oven-minutes": {
+    "id": "type-the-oven-minutes",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["oven-trial"],
+      "approvedCharacterRefs": [],
+      "briefId": "the-oven-minutes"
+    },
+    "treatmentLabel": "BORROWED HEAT"
+  },
+  "a-public-garden-can-be-used": {
+    "id": "type-a-public-garden-can-be-used",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["river-path"],
+      "approvedCharacterRefs": [],
+      "briefId": "a-public-garden-can-be-used"
+    },
+    "treatmentLabel": "FOOTPRINTS WELCOME"
+  },
+  "four-weeks-to-keep-the-lights-on": {
+    "id": "type-four-weeks-to-keep-the-lights-on",
+    "entityType": "article",
+    "status": "placeholder",
+    "rights": "Original typographic layout. No third-party imagery.",
+    "credit": "Tomorrow Times / Typographic editorial treatment",
+    "alt": "Typographic editorial illustration; scene artwork pending.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["oven-trial"],
+      "approvedCharacterRefs": [],
+      "briefId": "four-weeks-to-keep-the-lights-on"
+    },
+    "treatmentLabel": "FOUR WEEKS TO WORK"
+  },
+  "earth": {
+    "id": "identity-earth",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Earth · Restoration Districts: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["earth"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-earth"
+    }
+  },
+  "luna": {
+    "id": "identity-luna",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Luna · Tranquility: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["luna"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-luna"
+    }
+  },
+  "ares": {
+    "id": "identity-ares",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Ares Commons · Mars: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["ares"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-ares"
+    }
+  },
+  "valles": {
+    "id": "identity-valles",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Valles Steps · Mars: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["valles"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-valles"
+    }
+  },
+  "ceres": {
+    "id": "identity-ceres",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Ceres · The Reservoir Ring: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["ceres"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-ceres"
+    }
+  },
+  "europa": {
+    "id": "identity-europa",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Europa · Pelagos: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["europa"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-europa"
+    }
+  },
+  "ganymede": {
+    "id": "identity-ganymede",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Ganymede · Juniper: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["ganymede"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-ganymede"
+    }
+  },
+  "titan": {
+    "id": "identity-titan",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Titan · Lantern: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["titan"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-titan"
+    }
+  },
+  "venus": {
+    "id": "identity-venus",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Venus · Morrow Aerostat: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["venus"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-venus"
+    }
+  },
+  "waystation": {
+    "id": "identity-waystation",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Waystation Nine: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["waystation"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-waystation"
+    }
+  },
+  "council": {
+    "id": "identity-council",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Common Reach Council: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["council"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-council"
+    }
+  },
+  "water-board": {
+    "id": "identity-water-board",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Ares Reservoir Authority: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["water-board"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-water-board"
+    }
+  },
+  "helix": {
+    "id": "identity-helix",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Helix Waterworks: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["helix"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-helix"
+    }
+  },
+  "meridian": {
+    "id": "identity-meridian",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Meridian Transit: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["meridian"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-meridian"
+    }
+  },
+  "pelagos": {
+    "id": "identity-pelagos",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Pelagos Listening Institute: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["pelagos"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-pelagos"
+    }
+  },
+  "customs": {
+    "id": "identity-customs",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Ceres Dock Service: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["customs"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-customs"
+    }
+  },
+  "reach-six": {
+    "id": "identity-reach-six",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Reach Six League: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["reach-six"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-reach-six"
+    }
+  },
+  "comets": {
+    "id": "identity-comets",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Ceres Comets: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["comets"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-comets"
+    }
+  },
+  "saints": {
+    "id": "identity-saints",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Tranquility Saints: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["saints"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-saints"
+    }
+  },
+  "ribbons": {
+    "id": "identity-ribbons",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Red Ribbons: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["ribbons"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-ribbons"
+    }
+  },
+  "lantern-records": {
+    "id": "identity-lantern-records",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Lantern Records: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["lantern-records"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-lantern-records"
+    }
+  },
+  "tomorrow": {
+    "id": "identity-tomorrow",
+    "entityType": "entity",
+    "status": "placeholder",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "The Tomorrow Times: typographic identity, not a portrait or surveyed location.",
+    "crop": "landscape",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["tomorrow"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-tomorrow"
+    }
+  },
+  "amara": {
+    "id": "identity-amara",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Amara Venn: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["amara"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-amara"
+    }
+  },
+  "ivo": {
+    "id": "identity-ivo",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Ivo Sen: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["ivo"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-ivo"
+    }
+  },
+  "tamsin": {
+    "id": "identity-tamsin",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Tamsin Quill: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["tamsin"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-tamsin"
+    }
+  },
+  "soren": {
+    "id": "identity-soren",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Soren Dax: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["soren"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-soren"
+    }
+  },
+  "ines": {
+    "id": "identity-ines",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Ines Vale: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["ines"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-ines"
+    }
+  },
+  "sol": {
+    "id": "identity-sol",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Sol Arendt: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["sol"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-sol"
+    }
+  },
+  "nadi": {
+    "id": "identity-nadi",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Nadi Rhee: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["nadi"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-nadi"
+    }
+  },
+  "oren": {
+    "id": "identity-oren",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Oren Pike: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["oren"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-oren"
+    }
+  },
+  "leena": {
+    "id": "identity-leena",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Leena Moss: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["leena"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-leena"
+    }
+  },
+  "esme": {
+    "id": "identity-esme",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Esmé Calder: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["esme"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-esme"
+    }
+  },
+  "jun": {
+    "id": "identity-jun",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Jun Wren: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["jun"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-jun"
+    }
+  },
+  "mira": {
+    "id": "identity-mira",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Mira-of-Nine: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["mira"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-mira"
+    }
+  },
+  "lyra": {
+    "id": "identity-lyra",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Lyra Saye: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["lyra"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-lyra"
+    }
+  },
+  "teo": {
+    "id": "identity-teo",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Teo Voss: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["teo"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-teo"
+    }
+  },
+  "mara": {
+    "id": "identity-mara",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Mara Isk: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["mara"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-mara"
+    }
+  },
+  "tavi": {
+    "id": "identity-tavi",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Tavi Okoro: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["tavi"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-tavi"
+    }
+  },
+  "pema": {
+    "id": "identity-pema",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Pema Das: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["pema"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-pema"
+    }
+  },
+  "cato": {
+    "id": "identity-cato",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Cato Bell: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["cato"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-cato"
+    }
+  },
+  "sima": {
+    "id": "identity-sima",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Sima Ro: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["sima"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-sima"
+    }
+  },
+  "hana": {
+    "id": "identity-hana",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Hana Daro: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["hana"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-hana"
+    }
+  },
+  "eli": {
+    "id": "identity-eli",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Eli Daro: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["eli"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-eli"
+    }
+  },
+  "noa": {
+    "id": "identity-noa",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Noa Daro: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["noa"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-noa"
+    }
+  },
+  "ada": {
+    "id": "identity-ada",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Ada Daro: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["ada"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-ada"
+    }
+  },
+  "bea": {
+    "id": "identity-bea",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Bea Lin: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["bea"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-bea"
+    }
+  },
+  "rafi": {
+    "id": "identity-rafi",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Rafi Nacre: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["rafi"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-rafi"
+    }
+  },
+  "nell": {
+    "id": "identity-nell",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Nell Fenn: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["nell"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-nell"
+    }
+  },
+  "ari": {
+    "id": "identity-ari",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Ari Slate: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["ari"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-ari"
+    }
+  },
+  "rue": {
+    "id": "identity-rue",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Rue Anik: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["rue"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-rue"
+    }
+  },
+  "dev": {
+    "id": "identity-dev",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Dev Imani: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["dev"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-dev"
+    }
+  },
+  "kael": {
+    "id": "identity-kael",
+    "entityType": "character",
+    "status": "pending",
+    "rights": "Original typographic identity. No canonical portrait or place reference approved.",
+    "credit": "Tomorrow Times / Identity typography",
+    "alt": "Kael Orr: typographic identity, not a portrait or surveyed location.",
+    "crop": "portrait",
+    "focalPoint": [50, 50],
+    "reference": {
+      "canonIds": ["kael"],
+      "approvedCharacterRefs": [],
+      "briefId": "portrait-kael"
+    }
+  }
+}

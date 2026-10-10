@@ -3,57 +3,114 @@ import { sections } from "@/lib/contracts";
 import { fictionalDate, editorialZone } from "@/lib/calendar";
 import { publication } from "@/lib/publication";
 import { LiveDate, ThemeButton } from "./reader-tools";
+const nav = [
+  ["entertainment", "Entertainment"],
+  ["crime", "Crime & Justice"],
+  ["politics", "Politics"],
+  ["science", "Science"],
+  ["sports", "Sports"],
+  ["business", "Business"],
+  ["culture", "Culture"],
+];
+export function Brand() {
+  return (
+    <Link
+      className="wordmark"
+      href="/"
+      aria-label={`${publication.name} — front page`}
+    >
+      <svg
+        className="brand-symbol"
+        width="42"
+        height="42"
+        viewBox="0 0 42 42"
+        fill="none"
+        aria-hidden="true"
+      >
+        <path d="M7 10h28l-4 6H24v19h-7V16H7z" fill="currentColor" />
+        <ellipse
+          cx="21"
+          cy="22"
+          rx="21"
+          ry="9"
+          transform="rotate(-35 21 22)"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+      </svg>
+      <span>
+        <small>THE</small>TOMORROW<span className="wordmark-times"> TIMES</span>
+      </span>
+    </Link>
+  );
+}
 export function Header() {
   return (
     <>
       <div className="fiction-bar">
-        A FICTIONAL UNIVERSE. A VERY HUMAN STORY.{" "}
-        <Link href="/about">Read our premise ↗</Link>
+        <span>FICTIONAL NEWS. REAL HUMAN DRAMA.</span>
+        <Link href="/about">
+          Welcome to the year 3026 <span aria-hidden="true">↗</span>
+        </Link>
       </div>
       <header className="site-header">
-        <div className="masthead-meta">
-          <div>
-            <span className="edition-dot" /> THE COMMON REACH EDITION
+        <div className="masthead">
+          <Brand />
+          <div className="masthead-date">
+            <LiveDate initial={fictionalDate()} zone={editorialZone()} />
+            <span>THE COMMON REACH EDITION</span>
           </div>
           <div className="header-tools">
-            <Link href="/search">Search</Link>
-            <Link href="/reading-list">Reading list</Link>
+            <Link href="/search">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="8"
+                  cy="8"
+                  r="5.5"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                />
+                <path d="m12 12 5 5" stroke="currentColor" strokeWidth="1.5" />
+              </svg>
+              Search
+            </Link>
+            <Link href="/reading-list" className="reading-list-link">
+              Reading list <span aria-hidden="true">+</span>
+            </Link>
             <ThemeButton />
           </div>
         </div>
-        <div className="masthead">
-          <div className="masthead-date">
-            <LiveDate initial={fictionalDate()} zone={editorialZone()} />
-            <span>One thousand years ahead</span>
-          </div>
-          <Link className="wordmark" href="/">
-            {publication.name}
-          </Link>
-          <p className="masthead-tagline">{publication.tagline}</p>
-        </div>
         <nav className="desktop-nav" aria-label="Sections">
-          <Link href="/" className="frontpage-link">
-            Front page
-          </Link>
-          {sections.slice(0, 8).map(([id, name]) => (
-            <Link key={id} href={`/sections/${id}`}>
-              {name
-                .replace(" & Technology", "")
-                .replace(" & Economy", "")
-                .replace(" & Lifestyle", "")
-                .replace("Interplanetary Affairs", "The Reach")}
+          <Link href="/">The edition</Link>
+          {nav.map(([id, name]) => (
+            <Link
+              className={
+                id === "entertainment" ? "entertainment-nav" : undefined
+              }
+              href={`/sections/${id}`}
+              key={id}
+            >
+              {name}
             </Link>
           ))}
           <Link href="/community">Community</Link>
           <details className="more-nav">
-            <summary>More</summary>
+            <summary>Explore +</summary>
             <div>
-              {sections.slice(8).map(([id, name]) => (
-                <Link key={id} href={`/sections/${id}`}>
-                  {name}
-                </Link>
-              ))}
-              <Link href="/universe">Universe index</Link>
+              {sections
+                .filter(([id]) => !nav.some(([n]) => n === id))
+                .map(([id, name]) => (
+                  <Link key={id} href={`/sections/${id}`}>
+                    {name}
+                  </Link>
+                ))}
+              <Link href="/universe">People & places</Link>
               <Link href="/storylines">Storylines</Link>
               <Link href="/archives">Archives</Link>
             </div>
@@ -61,17 +118,21 @@ export function Header() {
         </nav>
         <details className="mobile-nav">
           <summary>
-            Explore the newspaper <span>☰</span>
+            Explore the Reach <span aria-hidden="true">☰</span>
           </summary>
           <nav aria-label="Mobile sections">
-            <Link href="/">Front page</Link>
-            {sections.map(([id, name]) => (
-              <Link key={id} href={`/sections/${id}`}>
-                {name}
-              </Link>
-            ))}
+            <Link href="/">The edition</Link>
+            <Link href="/sections/entertainment">Entertainment</Link>
+            {sections
+              .filter(([id]) => id !== "entertainment")
+              .map(([id, name]) => (
+                <Link href={`/sections/${id}`} key={id}>
+                  {name}
+                </Link>
+              ))}
+            <Link href="/reading-list">Reading list</Link>
             <Link href="/community">Community</Link>
-            <Link href="/universe">Universe index</Link>
+            <Link href="/universe">People & places</Link>
             <Link href="/storylines">Storylines</Link>
             <Link href="/archives">Archives</Link>
           </nav>
@@ -84,9 +145,7 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div>
-        <Link className="footer-wordmark" href="/">
-          {publication.name}
-        </Link>
+        <Brand />
         <p>{publication.tagline}</p>
         <p className="footer-disclosure">
           All reporting, people and events are fictional.
@@ -103,11 +162,9 @@ export function Footer() {
         <Link href="/admin">Editorial desk</Link>
       </nav>
       <p className="footer-note">
-        Independent voices.
+        A thousand years ahead.
         <br />
-        Shared worlds.
-        <br />
-        Unfinished stories.
+        Still a human story.
       </p>
     </footer>
   );

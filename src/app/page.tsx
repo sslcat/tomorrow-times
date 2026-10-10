@@ -1,134 +1,208 @@
 import Link from "next/link";
-import { allArticles, allStorylines, standings } from "@/lib/queries";
-import { ArticleCard, Art } from "@/components/editorial";
+import {
+  allArticles,
+  allEntities,
+  allStorylines,
+  publishedEvents,
+  standings,
+} from "@/lib/queries";
+import { ArticleCard } from "@/components/editorial";
+import { HeroStory, PeopleToWatch, SectionHeading } from "@/components/network";
+import {
+  entertainmentArticles,
+  crimeIds,
+  selectArticles,
+  widerReachIds,
+} from "@/lib/frontpage";
+import { displayDate } from "@/lib/calendar";
 export const metadata = { alternates: { canonical: "/" } };
 export default function Home() {
   const articles = allArticles();
-  const get = (id: string) => articles.find((a) => a.id === id)!;
-  const lead = get("the-water-that-isnt-there");
+  const entertainment = entertainmentArticles(articles);
+  const lead = entertainment[0];
+  const entities = allEntities();
+  const events = publishedEvents();
   const lines = allStorylines();
   return (
     <>
       <div className="edition-strip">
         <span>
-          <strong>IN THIS EDITION</strong> The water vote. The quiet stage. The
-          long way home.
+          <span className="edition-dot" /> THE COMMON REACH{" "}
+          <span className="muted"> / Opening edition · 5–9 October 3026</span>
         </span>
-        <Link href="/archives">Browse editions →</Link>
+        <Link href="/archives">Edition archive ↗</Link>
       </div>
-      <nav className="topic-strip" aria-label="Editor-selected topics">
-        <span>ON OUR RADAR</span>
-        <Link href="/storylines/the-missing-reserve">The water vote</Link>
-        <Link href="/storylines/under-the-ice">Europa’s signal</Link>
-        <Link href="/storylines/a-room-for-lyra">Lyra’s next chapter</Link>
-        <Link href="/storylines/a-place-at-the-table">The long way home</Link>
-        <small>Editor-selected topics</small>
-      </nav>
-      <section className="lead-grid" aria-label="Top stories">
-        <div className="lead-story">
-          <Link href={`/articles/${lead.id}`}>
-            <Art name="mars" priority />
-          </Link>
-          <div className="image-caption">
-            <span>ARES COMMONS, MARS</span>
-            <span>Original editorial illustration</span>
-          </div>
-          <p className="eyebrow">
-            <span className="live-dot" /> THE RESERVE DISPUTE{" "}
-            <span> / DEVELOPING STORYLINE</span>
+      <div className="front-intro">
+        <p>
+          Famous across worlds.
+          <br className="mobile-break" /> <span>Human everywhere.</span>
+        </p>
+        <span className="network-tag">
+          CULTURE. CONSEQUENCES. COSMIC DISTANCE.
+        </span>
+      </div>
+      <section className="spotlight-grid" aria-label="Top stories">
+        {lead && <HeroStory article={lead} />}
+        <aside className="spotlight-side">
+          <p className="rail-label">
+            IN THE ORBIT <span>01—02</span>
           </p>
-          <h1>
-            <Link href={`/articles/${lead.id}`}>{lead.title}</Link>
-          </h1>
-          <p className="lead-dek">{lead.dek}</p>
-          <p className="byline">
-            By <Link href="/entities/ari">Ari Slate</Link> · Investigations
-          </p>
-          <Link className="text-link" href="/storylines/the-missing-reserve">
-            Follow the full investigation <span>→</span>
-          </Link>
-        </div>
-        <aside className="lead-side">
-          <ArticleCard article={get("a-signal-without-a-name")} image />
-          <ArticleCard article={get("lyra-after-the-lights")} />
-          <div className="dispatch-label">
-            Across the Reach <span>↗</span>
-          </div>
-          <Link
-            className="small-headline"
-            href="/articles/a-captain-and-a-consignee"
-          >
-            A freighter waits. So does the medicine inside.
-          </Link>
+          {entertainment.slice(1, 3).map((a, i) => (
+            <ArticleCard key={a.id} article={a} image={i === 0} />
+          ))}
         </aside>
       </section>
-      <section className="below-fold" aria-label="Across the Reach">
-        <div className="section-heading">
-          <h2>Life goes on. Everywhere.</h2>
-          <Link href="/sections/local">The local dispatch →</Link>
+      <nav className="topic-strip" aria-label="Editor-selected topics">
+        <span>FOLLOW THE STORY</span>
+        <Link href="/storylines/a-room-for-lyra">Lyra & Teo ↗</Link>
+        <Link href="/storylines/sealed-cargo">The detained freighter ↗</Link>
+        <Link href="/storylines/the-long-season">The tether dispute ↗</Link>
+        <Link href="/storylines/under-the-ice">Europa’s signal ↗</Link>
+      </nav>
+      <section
+        className="entertainment-block"
+        aria-label="Entertainment and culture"
+      >
+        <SectionHeading
+          kicker="BEYOND THE SPOTLIGHT"
+          title="The show. The work. The fallout."
+          href="/sections/entertainment"
+          link="All entertainment"
+        />
+        <div className="culture-grid">
+          <div className="culture-main">
+            {entertainment[3] && (
+              <ArticleCard article={entertainment[3]} image />
+            )}
+          </div>
+          <div className="culture-secondary">
+            {entertainment[4] && <ArticleCard article={entertainment[4]} />}
+            <Link
+              className="storyline-teaser"
+              href="/storylines/a-room-for-lyra"
+            >
+              <span className="eyebrow">THE FULL TIMELINE</span>
+              <h3>
+                One partnership.
+                <br />
+                Two solo spotlights.
+              </h3>
+              <p>
+                The recording, the postponement, and the questions still open.
+              </p>
+              <span className="text-link">Catch up on Lyra & Teo ↗</span>
+            </Link>
+          </div>
         </div>
-        <div className="three-grid">
-          {[
-            "one-more-supper-on-ceres",
-            "the-table-points-nobody-can-argue-with",
-            "the-night-oven",
-          ].map((id) => (
-            <ArticleCard key={id} article={get(id)} image />
+      </section>
+      <PeopleToWatch articles={articles} entities={entities} />
+      <section className="crime-section" aria-label="Crime and investigations">
+        <SectionHeading
+          kicker="THE CASE FILE"
+          title="A ship detained. A story unfinished."
+          href="/sections/crime"
+          link="Crime & justice"
+        />
+        <div className="case-grid">
+          {selectArticles(articles, crimeIds).map((a, i) => (
+            <ArticleCard key={a.id} article={a} image={i === 0} />
           ))}
         </div>
       </section>
-      <section className="storyline-band">
-        <div>
-          <p className="eyebrow">THE STORIES DON’T END HERE</p>
+      <section className="reach-news" aria-label="News across the Reach">
+        <SectionHeading
+          kicker="THE WORLDS KEEP TURNING"
+          title="Away from the spotlight"
+          href="/archives"
+          link="All reporting"
+        />
+        <div className="reach-news-grid">
+          {selectArticles(articles, widerReachIds)
+            .slice(0, 6)
+            .map((a, i) => (
+              <ArticleCard key={a.id} article={a} image={i < 3} />
+            ))}
+        </div>
+      </section>
+      <section className="reach-map" aria-label="Across the Reach">
+        <div className="reach-map-intro">
+          <p className="eyebrow">TEN WORLDS. SHARED CONSEQUENCES.</p>
           <h2>
-            A world worth
+            Across
             <br />
-            keeping up with.
+            the Reach<span>.</span>
           </h2>
           <p>
-            Meet the people. Follow the consequences. Find your way into eight
-            connected stories.
+            Follow the places behind the headlines. Signals travel fast. People
+            take the long way.
           </p>
-          <Link className="button" href="/storylines">
-            Explore the storylines →
+          <Link href="/universe?kind=location" className="text-link">
+            Explore every place ↗
           </Link>
         </div>
-        <div className="storyline-links">
-          {lines.slice(0, 4).map((s, i) => (
-            <Link key={s.id} href={`/storylines/${s.id}`}>
-              <span>0{i + 1}</span>
-              <div>
-                <h3>{s.title}</h3>
-                <p>{s.summary}</p>
-              </div>
-              <b>↗</b>
-            </Link>
-          ))}
+        <div className="world-dispatches">
+          {["luna", "ceres", "ares", "europa"].map((id, i) => {
+            const place = entities.find((e) => e.id === id);
+            const latest = events.filter((e) => e.locationId === id).at(-1);
+            return (
+              place && (
+                <article key={id}>
+                  <span
+                    className={`world-sphere sphere-${id}`}
+                    aria-hidden="true"
+                  />
+                  <div>
+                    <p className="eyebrow">
+                      0{i + 1} /{" "}
+                      <Link href={`/entities/${id}`}>{place.name}</Link>
+                    </p>
+                    {latest ? (
+                      <>
+                        <h3>
+                          <Link href={`/events/${latest.id}`}>
+                            {latest.title}
+                          </Link>
+                        </h3>
+                        <time dateTime={latest.date}>
+                          {displayDate(latest.date)}
+                        </time>
+                      </>
+                    ) : (
+                      <p>No published dispatch yet.</p>
+                    )}
+                  </div>
+                  <Link
+                    href={`/entities/${id}`}
+                    aria-label={`Explore ${place.name}`}
+                  >
+                    ↗
+                  </Link>
+                </article>
+              )
+            );
+          })}
         </div>
       </section>
       <section className="news-bottom">
         <div>
-          <div className="section-heading">
-            <h2>More from the newsroom</h2>
-            <Link href="/archives">All reporting →</Link>
-          </div>
+          <SectionHeading
+            kicker="ORDINARY LIFE, EXTRAORDINARY PLACES"
+            title="A little closer to home"
+          />
           <div className="two-grid">
-            {[
-              "the-fine-print-of-passage",
-              "what-the-pressure-log-shows",
-              "the-path-through-the-reeds",
-              "teo-voss-room-tone",
-            ].map((id) => (
-              <ArticleCard key={id} article={get(id)} />
-            ))}
+            {selectArticles(articles, widerReachIds)
+              .slice(6)
+              .map((a) => (
+                <ArticleCard key={a.id} article={a} />
+              ))}
           </div>
         </div>
         <aside className="league-panel">
-          <p className="eyebrow">REACH SIX · TETHERBALL</p>
-          <h2>The opening table</h2>
+          <p className="eyebrow">REACH SIX / TETHERBALL</p>
+          <h2>Every point counts.</h2>
           <table>
-            <caption className="sr-only">
-              Fictional Reach Six league standings
+            <caption className="small">
+              Opening round · recorded results
             </caption>
             <thead>
               <tr>
@@ -152,26 +226,60 @@ export default function Home() {
             </tbody>
           </table>
           <p className="small muted">
-            Calculated from canonical match results. Three clubs are still to
-            play.
+            Three clubs have yet to play. Table calculated from published match
+            results.
           </p>
           <Link className="text-link" href="/sections/sports">
-            Scores & standings →
+            Scores & standings ↗
           </Link>
         </aside>
       </section>
+      <section className="continuing-section">
+        <SectionHeading
+          kicker="PICK UP WHERE THE WORLD LEFT OFF"
+          title="Stories with a next chapter"
+          href="/storylines"
+          link="Every storyline"
+        />
+        <div className="storyline-links">
+          {[...lines]
+            .sort(
+              (a, b) =>
+                Number(b.id === "a-room-for-lyra") -
+                Number(a.id === "a-room-for-lyra"),
+            )
+            .slice(0, 4)
+            .map((s, i) => (
+              <Link key={s.id} href={`/storylines/${s.id}`}>
+                <span>0{i + 1}</span>
+                <div>
+                  <p className="eyebrow">{s.status}</p>
+                  <h3>{s.title}</h3>
+                  <p>{s.summary}</p>
+                </div>
+                <b>↗</b>
+              </Link>
+            ))}
+        </div>
+      </section>
       <section className="community-banner">
-        <span className="community-mark">“</span>
+        <span className="community-mark" aria-hidden="true">
+          ↗
+        </span>
         <div>
           <p className="eyebrow">THE READER’S TABLE</p>
-          <h2>The news is fictional. Your curiosity is real.</h2>
+          <h2>
+            The news is fictional.
+            <br />
+            Your curiosity is real.
+          </h2>
           <p>
-            Explore the discussion rooms. The offline edition is read-only while
-            reader authentication is prepared.
+            Browse the article discussions. This edition is read-only; no reader
+            activity is simulated.
           </p>
         </div>
         <Link className="button outline" href="/community">
-          Visit the community →
+          Find your discussion ↗
         </Link>
       </section>
     </>

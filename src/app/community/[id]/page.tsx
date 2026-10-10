@@ -4,6 +4,7 @@ import { getSql } from "@/lib/db";
 import { visibleThread } from "@/lib/community";
 import { PageHeading } from "@/components/editorial";
 import { sectionName } from "@/lib/contracts";
+import { getArticle } from "@/lib/queries";
 export async function generateMetadata({
   params,
 }: {
@@ -12,7 +13,9 @@ export async function generateMetadata({
   const { id } = await params;
   const t = visibleThread(getSql(), id);
   return {
-    title: t ? `Discussion: ${t.title}` : "Discussion not found",
+    title: t
+      ? `Discussion: ${t.official ? getArticle(t.article_id)?.title || t.title : t.title}`
+      : "Discussion not found",
     description:
       "Real reader discussion of fictional news. Read-only offline edition.",
     alternates: { canonical: `/community/${id}` },
@@ -48,7 +51,9 @@ export default async function Thread({
     <>
       <PageHeading
         kicker={`${sectionName(t.section)} / READER DISCUSSION`}
-        title={t.title}
+        title={
+          t.official ? getArticle(t.article_id)?.title || t.title : t.title
+        }
         description="A place to discuss the reporting. Fan theories and reader comments are not canonical facts."
       />
       <Link className="button outline" href={`/articles/${t.article_id}`}>

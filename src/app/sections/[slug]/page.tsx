@@ -1,7 +1,10 @@
 import { notFound } from "next/navigation";
-import { allArticles, standings } from "@/lib/queries";
+import Link from "next/link";
+import { allArticles, allEntities, standings } from "@/lib/queries";
 import { sections, sectionName } from "@/lib/contracts";
-import { PageHeading, StoryList } from "@/components/editorial";
+import { ArticleCard, PageHeading, StoryList } from "@/components/editorial";
+import { HeroStory, PeopleToWatch, SectionHeading } from "@/components/network";
+import { entertainmentArticles } from "@/lib/frontpage";
 const descriptions: Record<string, string> = {
   interplanetary: "Across the distance, connected by more than ships.",
   politics: "Who decides, who benefits, and who has to wait.",
@@ -36,6 +39,83 @@ export default async function Section({
   const { slug } = await params;
   if (!sections.some(([id]) => id === slug)) notFound();
   const articles = allArticles(slug);
+  if (slug === "entertainment") {
+    const all = allArticles();
+    const coverage = entertainmentArticles(all);
+    return (
+      <>
+        <header className="entertainment-heading">
+          <div>
+            <p className="eyebrow">THE COMMON REACH / CULTURE DESK</p>
+            <h1>
+              Entertainment<span className="muted">.</span>
+            </h1>
+          </div>
+          <p>
+            The songs. The public lives.
+            <br />
+            The morning after the spotlight.
+          </p>
+        </header>
+        <nav
+          className="entertainment-formats"
+          aria-label="Entertainment coverage"
+        >
+          <a href="#music">Music & releases</a>
+          <a href="#behind-the-scenes">Behind the scenes</a>
+          <Link href="/storylines/a-room-for-lyra">Lyra & Teo timeline</Link>
+          <Link href="/community?section=entertainment">
+            Reader discussion ↗
+          </Link>
+        </nav>
+        <section
+          className="spotlight-grid"
+          id="music"
+          aria-label="Music and public lives"
+        >
+          {coverage[0] && <HeroStory article={coverage[0]} sectionPage />}
+          <div className="entertainment-rail">
+            {coverage.slice(1, 3).map((a) => (
+              <ArticleCard
+                article={a}
+                key={a.id}
+                image={a.id === "teo-voss-room-tone"}
+              />
+            ))}
+          </div>
+        </section>
+        <section className="entertainment-block" id="behind-the-scenes">
+          <SectionHeading
+            kicker="THE PEOPLE WHO MAKE THE SHOW"
+            title="Behind the scenes"
+          />
+          <div className="two-grid">
+            {coverage.slice(3).map((a) => (
+              <ArticleCard key={a.id} article={a} image />
+            ))}
+          </div>
+        </section>
+        <PeopleToWatch articles={all} entities={allEntities()} />
+        <section className="community-banner">
+          <div>
+            <p className="eyebrow">THE STORY IS STILL UNFOLDING</p>
+            <h2>
+              Follow the work.
+              <br />
+              Keep the questions open.
+            </h2>
+            <p>
+              A solo recording is not a confirmed breakup. Follow the published
+              timeline, the collaborators and the next report.
+            </p>
+          </div>
+          <Link href="/storylines/a-room-for-lyra" className="button outline">
+            The Lyra & Teo timeline ↗
+          </Link>
+        </section>
+      </>
+    );
+  }
   return (
     <>
       <PageHeading

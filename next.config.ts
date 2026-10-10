@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 const config: NextConfig = {
+  devIndicators: false,
   allowedDevOrigins:
     process.env.CODESPACE_NAME &&
     process.env.GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN

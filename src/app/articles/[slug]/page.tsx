@@ -7,10 +7,13 @@ import {
   getStoryline,
   relatedArticles,
   correctionHistory,
+  publishedEvents,
 } from "@/lib/queries";
 import { sectionName } from "@/lib/contracts";
 import { displayDate } from "@/lib/calendar";
-import { Art, ArticleCard } from "@/components/editorial";
+import { ArticleCard } from "@/components/editorial";
+import { EditorialImage } from "@/components/editorial-image";
+import { resolveEditorialImage } from "@/lib/editorial-images";
 import {
   SaveButton,
   ReadingProgress,
@@ -114,10 +117,10 @@ export default async function ArticlePage({ params }: Props) {
         </div>
       )}
       <figure className="article-figure">
-        <Art name={a.art} priority />
+        <EditorialImage id={a.id} label={a.title} section={a.section} hero />
         <figcaption>
-          Original editorial illustration. Depicts a fictional world; this is
-          not documentary imagery.
+          {resolveEditorialImage(a.id).credit}. A fictional world; not
+          documentary imagery.
         </figcaption>
       </figure>
       <div className="article-layout">
@@ -147,6 +150,18 @@ export default async function ArticlePage({ params }: Props) {
             <Link className="text-link" href={`/storylines/${line.id}`}>
               Read the timeline →
             </Link>
+            <div className="timeline timeline-compact">
+              {publishedEvents()
+                .filter((e) => e.storylineId === line.id)
+                .map((e) => (
+                  <article key={e.id}>
+                    <time dateTime={e.date}>{displayDate(e.date)}</time>
+                    <h3>
+                      <Link href={`/events/${e.id}`}>{e.title}</Link>
+                    </h3>
+                  </article>
+                ))}
+            </div>
           </div>
           <div>
             <h3>People & places</h3>
@@ -169,6 +184,25 @@ export default async function ArticlePage({ params }: Props) {
         </aside>
       </div>
       <div className="article-end">
+        {a.presentation && (
+          <details className="presentation-note">
+            <summary>
+              About this edition’s copy · View original reporting
+            </summary>
+            <p>
+              {a.presentation.version}: headline, deck and selected openings
+              edited for clarity. Event facts, publication date and original
+              record are preserved. Later newsroom corrections take precedence.
+            </p>
+            <h3>{a.presentation.title}</h3>
+            <p>
+              <strong>{a.presentation.dek}</strong>
+            </p>
+            {a.presentation.body.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </details>
+        )}
         {corrections.map((c, i) => (
           <div className="note" key={i}>
             <strong>

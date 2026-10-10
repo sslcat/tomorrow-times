@@ -46,7 +46,7 @@ The six-team sports table is computed from three recorded opening-round fixtures
 
 Each operation permits at most two attempts and a five-second result deadline. Offline work has no network side effects. A future remote adapter must implement AbortSignal cancellation; Promise timeout alone does not cancel remote activity, so the current bounded helper must not be treated as a safe paid-call retry policy. Only approved budget and a reviewed adapter may add paid traffic. Jobs are claimed before work, count failed attempts toward the daily UTC cap, and retain failed/running states. A crashed running job remains inspectable and is not automatically replayed. There is no unattended scheduler process.
 
-`ImageProvider` resolves only six enum-approved local assets at zero cost. Canonical character identity references are stable, and no face generator is active.
+The legacy `ImageProvider` retains its six-value enum for source compatibility. V2 public presentation resolves a typed editorial manifest with six additional original SVG compositions, per-article fallback records and pending monogram identities. Canonical character identity references require review; no face generator is active. See `V2_IMAGERY_WORKFLOW.md`.
 
 ## PostgreSQL path
 

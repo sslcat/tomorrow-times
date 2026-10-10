@@ -7,22 +7,22 @@ export default function Image() {
   return new ImageResponse(
     <div
       style={{
-        background: "#f5f2e9",
-        color: "#243c32",
+        background: "#0b0d14",
+        color: "#f3f2f8",
         width: "100%",
         height: "100%",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         padding: 75,
-        borderTop: "18px solid #29473c",
+        borderTop: "18px solid #c3b1ff",
       }}
     >
       <div
         style={{
           fontSize: 22,
           letterSpacing: 5,
-          color: "#aa412d",
+          color: "#c3b1ff",
           marginBottom: 28,
         }}
       >
@@ -36,11 +36,11 @@ export default function Image() {
         style={{
           fontSize: 22,
           marginTop: 60,
-          borderTop: "1px solid #a7afa2",
+          borderTop: "1px solid #303646",
           paddingTop: 25,
         }}
       >
-        An evolving science-fiction universe. Independent voices. Shared worlds.
+        Famous across worlds. Human everywhere.
       </div>
     </div>,
     size,
