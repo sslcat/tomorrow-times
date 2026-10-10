@@ -65,7 +65,7 @@ Next 16 generated the repository AGENTS.md during development. Its bundled docum
 
 The registered private browser address is:
 
-`https://humble-disco-x596q495wvvcp44v-3000.app.github.dev`
+`https://<codespace-name>-3000.<forwarding-domain>`
 
 The owner must be signed into GitHub with access to the Codespace. The app and browser layouts were verified locally; the owner's authenticated browser session is not available to the agent. Port metadata explicitly reports `private`, and an unauthenticated request reached GitHub’s gateway with HTTP 302. A loopback-to-self tunnel probe was inconclusive and was stopped; no claim is made that the agent completed an authenticated browser visit through GitHub's gateway. Use the Codespaces Ports panel if the private address needs reopening.
 

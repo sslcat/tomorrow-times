@@ -2,7 +2,7 @@
 
 ## Implemented
 
-The local application includes a forty-article opening edition, ten locations, thirty recurring characters, twelve major institutions, eight interwoven storylines and seventeen canonical events. It supports all twelve sections, event/entity/storyline discovery, archival editions, a live calendar, search, browser-local engagement and six original editorial illustrations. Its responsive newspaper layout has mobile navigation, focus states, reduced-motion support, loading/error/empty states and fictional disclosure in reading/sharing contexts.
+The local application includes a forty-article opening edition, ten locations, thirty recurring characters, twelve major institutions, eight interwoven storylines and seventeen canonical events. It supports all twelve sections, event/entity/storyline discovery, archival editions, a live calendar, search, browser-local engagement and twelve original editorial illustrations. Its responsive newspaper layout has mobile navigation, focus states, reduced-motion support, loading/error/empty states and fictional disclosure in reading/sharing contexts.
 
 The deterministic newsroom has schema contracts, reviewed proposals and drafts, continuity checks, audit trails, corrections/retractions, atomic/idempotent publication and actual fixture-based standings. The protected development desk exposes this workflow. The community is a real persisted discussion data model with forty official rooms and tested moderation/permissions foundations, presented honestly read-only.
 
@@ -15,13 +15,15 @@ The deterministic newsroom has schema contracts, reviewed proposals and drafts, 
 - Scientific travel rules use conservative route minima, not live orbital mechanics. Life extension, office transitions, relationship diversity and sports schedule evolution need richer models before broader simulation.
 - No real public reader authentication or posting UI is enabled. The forum cannot open to public writes until its identity/moderation rollout is complete.
 - Local bookmarks/follows do not sync across devices. There are no notifications, analytics, invented reader counts or endorsements.
-- Admin is development-only. A production release needs real editor identities, role separation, strict CSP, distributed quotas, robust background-job cancellation/recovery and operations.
+- Admin is development-only. A production editing service needs real editor identities, role separation, strict CSP, distributed quotas, robust background-job cancellation/recovery and operations.
 - SQLite and straightforward public search fit the current corpus; PostgreSQL, FTS/cursor pagination and concurrency testing are future scale work.
 - Five development-only dependency audit findings remain in the Next lint dependency chain; the production dependency audit was clean at verification.
 
+A read-only build snapshot is now implemented for a possible showcase; see [release readiness](PUBLIC_RELEASE_READINESS_REPORT.md). This does not enable a hosted editing service or public posting.
+
 ## Recommended sequence
 
-1. Owner reviews the application, stories, test report and local commits; authorize a push to preserve source in the existing private repository.
+1. Owner reviews the application, stories, test report and local commits; review the current repository visibility/history findings before separately authorizing a push.
 2. Extend the canon transition vocabulary (office succession, legal findings, fixture corrections, death/public profile history) and add more handcrafted continuation fixtures, with regression tests for each new effect.
 3. Build verified reader/editor identity and operational moderation; commission an authorization/abuse review before any public posting.
 4. Add editorial quality evaluation with explicit provenance and manual approval. Any external model/image provider requires a separate owner-approved budget and abortable, metered implementation.

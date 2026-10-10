@@ -3,6 +3,7 @@ import { Header, Footer } from "@/components/shell";
 import { publication } from "@/lib/publication";
 import "./globals.css";
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
 export const metadata: Metadata = {
   metadataBase: new URL(publication.url),
   title: {

@@ -1,7 +1,10 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
+import { showcaseEnabled } from "./runtime-mode";
 export const cookieName = "tt_editor";
 export function adminEnabled() {
   return (
+    !showcaseEnabled() &&
+    process.env.VERCEL !== "1" &&
     process.env.NODE_ENV !== "production" &&
     process.env.LOCAL_ADMIN_ENABLED === "true" &&
     (process.env.ADMIN_TOKEN?.length || 0) >= 32

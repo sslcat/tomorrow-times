@@ -159,3 +159,9 @@ test-results/
 playwright-report/
 .playwright/
 artifacts/
+.showcase/
+.vercel/
+*.pem
+*.key
+*.p12
+*.pfx

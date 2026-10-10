@@ -5,6 +5,8 @@ import path from "node:path";
 import { world, entities, storylines } from "../data/world";
 import { seedArticles, seedEvents } from "../data/edition";
 import { draftSchema, entitySchema, eventSchema } from "./contracts";
+import { assertHostingMode, showcaseEnabled } from "./runtime-mode";
+import { openShowcaseSnapshot } from "./showcase";
 export type Sqlite = Database.Database;
 export function migrate(sql: Sqlite) {
   sql.pragma("foreign_keys = ON");
@@ -167,7 +169,12 @@ export function seed(sql: Sqlite) {
 }
 let singleton: Sqlite | undefined;
 export function getSql() {
+  assertHostingMode();
   if (!singleton) {
+    if (showcaseEnabled()) {
+      singleton = openShowcaseSnapshot();
+      return singleton;
+    }
     const file = process.env.DATABASE_PATH || "./data/tomorrow-times.sqlite";
     fs.mkdirSync(path.dirname(path.resolve(file)), { recursive: true });
     singleton = new Database(file);

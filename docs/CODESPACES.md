@@ -1,6 +1,8 @@
 # Codespaces operations
 
-Work directly in `/workspaces/tomorrow-times`, the owner’s existing private repository. This is remote Codespaces disk, not local Windows or OneDrive. No duplicate project, hosting account, public deployment or paid API is required.
+Work directly in `/workspaces/tomorrow-times`, the owner’s existing checkout. This is remote Codespaces disk, not local Windows or OneDrive. No duplicate project, hosting account, public deployment or paid API is required.
+
+The release audit later observed the repository already public while all forwarded ports remained private. Review [current privacy/history findings](PUBLIC_RELEASE_READINESS_REPORT.md) before sharing or pushing; this document does not authorize a visibility change.
 
 ## Preview
 
@@ -40,6 +42,6 @@ git diff origin/main..HEAD
 git push origin main
 ```
 
-The last command pushes the local main branch to the existing private repository and requires the owner’s approval. If the remote tracking branch is not available, use `git show --stat HEAD` and `git log --oneline` for local review, then inspect the configured remote before pushing. Do not change repository visibility.
+The last command pushes the local main branch to the existing repository and requires the owner’s approval. If the remote tracking branch is not available, use `git show --stat HEAD` and `git log --oneline` for local review, then inspect the configured remote before pushing. Do not change repository visibility.
 
 A Git push backs up versioned source, migrations, fixtures and documentation. It does not back up ignored secrets, local canonical changes or SQLite data. Use `npm run db:backup` and an owner-approved secure destination for any valuable local editorial database. Never commit credentials to make backup easier.

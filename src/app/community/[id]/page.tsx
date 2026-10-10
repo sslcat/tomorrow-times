@@ -33,7 +33,7 @@ export default async function Thread({
   if (!t) notFound();
   const p = Math.max(
     1,
-    Math.min(10000, Number((await searchParams).page) || 1),
+    Math.min(10000, Math.floor(Number((await searchParams).page)) || 1),
   );
   const comments = sql
     .prepare(

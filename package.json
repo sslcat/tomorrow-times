@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": ">=22.13.0"
+    "node": "24.x"
   },
   "scripts": {
     "dev": "NEXT_TELEMETRY_DISABLED=1 next dev --hostname 0.0.0.0 --port 3000",
-    "build": "NEXT_TELEMETRY_DISABLED=1 next build --webpack",
+    "build": "node --import tsx scripts/prepare-build.ts && NEXT_TELEMETRY_DISABLED=1 next build --webpack",
     "start": "NEXT_TELEMETRY_DISABLED=1 next start --hostname 0.0.0.0 --port 3000",
     "db:migrate": "node --import tsx scripts/database.ts migrate",
     "db:seed": "node --import tsx scripts/database.ts seed",
@@ -21,7 +21,12 @@
     "test:e2e": "node scripts/browser-test.mjs",
     "check": "npm run typecheck && npm run lint && npm test && npm run build",
     "test:e2e:admin": "E2E_EDITOR_MODE=true node scripts/browser-test.mjs",
-    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"scripts/*.{ts,mjs}\" \"tests/**/*.ts\" \"*.ts\" \"*.mjs\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"scripts/*.{ts,mjs}\" \"tests/**/*.ts\" \"*.ts\" \"*.mjs\"",
+    "build:showcase": "SHOWCASE_MODE=true npm run build",
+    "start:showcase": "SHOWCASE_MODE=true npm run start",
+    "test:e2e:showcase": "SHOWCASE_MODE=true E2E_SHOWCASE_MODE=true node scripts/browser-test.mjs",
+    "audit:repository": "node scripts/audit-repository.mjs",
+    "check:showcase": "node --import tsx scripts/check-showcase-build.ts"
   },
   "dependencies": {
     "better-sqlite3": "13.0.3",
@@ -44,5 +49,6 @@
     "typescript": "6.0.3",
     "vitest": "5.0.3"
   },
-  "type": "module"
+  "type": "module",
+  "license": "UNLICENSED"
 }

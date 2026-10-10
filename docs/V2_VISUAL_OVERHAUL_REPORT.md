@@ -88,7 +88,7 @@ Inspection prompted shorter, distinct typography labels so thumbnails no longer 
 
 ## Preview and local commits
 
-Private Codespaces preview: **https://humble-disco-x596q495wvvcp44v-3000.app.github.dev**. Port metadata reports `private`. The local app is verified on port 3000; the remote browser requires the owner’s authorized GitHub session. The development server is restored for handoff. If the session stops, run `npm run dev`, then open **Ports → 3000 → Open in Browser**. Do not start another development server during the isolated editor browser suite.
+Private Codespaces preview address pattern: `https://<codespace-name>-3000.<forwarding-domain>`. Open the actual address through the Ports panel. Port metadata reports `private`. The local app is verified on port 3000; the remote browser requires the owner’s authorized GitHub session. The development server is restored for handoff. If the session stops, run `npm run dev`, then open **Ports → 3000 → Open in Browser**. Do not start another development server during the isolated editor browser suite.
 
 Local implementation milestones:
 
